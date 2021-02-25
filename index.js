@@ -28,12 +28,12 @@ function emitEvent(event) {
       gtag('event', 'sign_up', { event_category: 'engagement', value: 'freeQueues' });
       break;
     }
-    case 'loginAdvertise': {
-      gtag('event', 'sign_up', { event_category: 'engagement', value: 'freeQueues' });
+    case 'loginBottom': {
+      gtag('event', 'sign_up', { event_category: 'engagement', value: 'bottom' });
       break;
     }
-    case 'loginNumbers': {
-      gtag('event', 'sign_up', { event_category: 'engagement', value: 'numbers' });
+    case 'contactAdvertise': {
+      gtag('event', 'contact', { event_category: 'engagement', value: 'advertise' });
       break;
     }
     case 'contactPhone': {
