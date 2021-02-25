@@ -38,16 +38,6 @@ hr {
   border: 1px solid #c1e4f5;
 }
 
-.scaleOnHover {
-  transform: scale(1.0);
-  transition: transform 0.3s;
-}
-
-.scaleOnHover:hover {
-  transform: scale(1.05);
-  z-index: 1;
-}
-
 .header {
   position: fixed;
   top: 0;
