@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   font-family: 'Varela Round', sans-serif;
   font-size: 24px;
-  background-color: #CCEEFF;
+  background-color: #DEF4FF;
   width: 100vw;
   overflow-x: hidden;
   color: #424242;
@@ -56,11 +56,9 @@ hr {
   width: 100%;
   height: 3.5rem;
   background-color: #FFF;
-  background-image: linear-gradient(#FFF, #CCEEFF);
-  border-bottom: 1px solid #AEDCFF;
-  color: #FFF;
+  background-image: linear-gradient(#FFF, #DEF4FF);
   text-align: left;
-  box-shadow: 0px 0px 8px #AEDCFF;
+  box-shadow: 0px 0px 8px #DEF4FF;
 }
 
 .header .btn {
@@ -69,7 +67,7 @@ hr {
 
 .header .content {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   padding: 0.5em 1em;
 }
 
@@ -116,25 +114,23 @@ hr {
   color: #41a4f0;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 950px) {
   .header .nav {
-    font-size: 0.85em;
+    font-size: 0.8em;
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 790px) {
   .header .nav {
-    font-size: 0.75em;
-  }
-}
-
-@media screen and (max-width: 810px) {
-  .header .nav {
-    font-size: 0.59em;
+    font-size: 0.65em;
   }
 }
 
 @media screen and (max-width: 670px) {
+  .header .content {
+    flex-direction: row-reverse;
+  }
+
   .header .nav {
     font-size: 1rem;
   }
@@ -170,6 +166,12 @@ hr {
 }
 
 @media screen and (max-width: 450px) {
+  .header .btn, .loginLink {
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 350px) {
   .logo {
     display: none;
   }
@@ -217,6 +219,8 @@ hr {
 .aboveTheFold .column h1 {
   width: 100%;
   text-align: right;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .columns {
