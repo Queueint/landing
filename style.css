@@ -464,13 +464,12 @@ hr {
 }
 
 .footer {
-  background-color: #2C2C2B;
+  background-color: #FFF;
   font-size: 0.75em;
 }
 
 .footer .content {
-  background-color: #2C11AB;
-  color: #FFF;
+  color: #000;
   padding: 1em;
   display: flex;
   flex-direction: row;
