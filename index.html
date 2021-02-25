@@ -49,16 +49,16 @@
             <i class="fas fa-bars"></i>
           </button>
           <div class="navContent">
-            <a href="#whatIs">מהי Queueint?</a>
+            <a href="#whatIs">מה זה Qint?</a>
             <a href="#howItWorks">איך זה עובד?</a>
-            <a href="#forBusiness">לעסקים</a>
-            <a href="#forCustomers">ללקוחות</a>
+            <a href="#advantages">הייתרונות של Qint</a>
+            <a href="#numbers">קצת מספרים</a>
             <a href="#contact">צור קשר</a>
             
           </div>
-          <a class="loginLink" href="https://app.q-int.com/#/login" onclick="emitEvent('login')">
+          <a class="loginLink" href="https://app.q-int.com/#/login" onclick="emitEvent('loginHeader')">
             <button class="btn callToAction">
-              כניסה לבעלי עסקים
+              כניסה \ הרשמה
             </button>
           </a>
         </div>
@@ -66,92 +66,200 @@
     </div>
     
     <div class="body">
-      <svg class="background cloud">
-        <path
-           d="M 0.00710011,58.240551 C -0.35399989,39.604671 13.14318,34.38695 21.173766,31.971206 36.151133,-8.3922776 82.237543,-8.2063736 101.30472,19.497993 c 27.13888,-4.063811 40.76316,19.262655 40.63244,30.61607 23.29779,2.076686 20.08587,30.34316 0.56696,33.07292 L 23.252635,82.809003 C 15.52842,82.691113 0.33678711,75.255243 0.00710011,58.240551 Z"
-           id="path24"
-           sodipodi:nodetypes="scccccs" />
-      </svg>
+      <a class="anchor" id="whatIs"></a>
+      <div class="aboveTheFold columns">
+        <div class="column scaleOnHover revealRight">
+          <h1>מערכת חכמה לניהול תורים</h1>
+          <p>
+            Qint מספקת לארגונים הקמת מערך לניהול תורים
+            <b>בתוך מספר דקות</b>
+            בנוחות,
+            <b>ללא עלויות חומרה ותחזוקה</b>
+            תוך כדי
+            <b>פרסום</b>
+            ללקוחותיך,
+            <b>ניתוח נתונים</b>
+            ומניעת נטישה של התור מצד הלקוח.
+          </p>
+          <div class="buttonsContainer">
+            <a href="https://app.q-int.com/#/login" onclick="emitEvent('loginFreeQueues')">
+              <button class="btn callToAction">
+                הקימו מערך ניהול תורים בחינם
+              </button>
+            </a>
+            <a href="https://app.q-int.com/#/login" onclick="emitEvent('loginAdvertise')">
+              <button class="btn callToAction">
+                פרסמו את העסק שלכם
+              </button>
+            </a>
+          </div>
+          <p class="subtitle">ללא תשלום וללא פרטי אשראי</p>
+        </div>
+        <div class="column revealLeft">
+          <img src="assets/queue.svg"/>
+        </div>
+      </div>
+
+      <hr/>
       
+      <a class="anchor" id="howItWorks"></a>
+      <h1>איך זה עובד?</h1>
+      <div class="steps">
+        <div class="step scaleOnHover revealRight">
+          <p class="title">
+            סרוק
+          </p>
+          <div class="stepBody">
+            <div class="iconContainer">
+              <i class="fas fa-qrcode"></i>
+            </div>
+            <p class="description">
+              בעת ההגעה לתור הלקוח יסרוק קוד Qr \ ישלח SMS למספר שרשום בשלט ויקבל מספר בתור. (אפשרות להזמנת תור מרחוק מתאפשרת)
+            </p>
+          </div>
+        </div>
+        <div class="step scaleOnHover revealBottom">
+          <p class="title">
+            קבל
+          </p>
+          <div class="stepBody">
+            <div class="iconContainer">
+              <i class="fab fa-get-pocket"></i>
+            </div>
+            <p class="description">
+              הלקוח יקבל מספר בתור ויראה את כמות הלקוחות שלפניו, זמן המתנה מוערך, ויוכל להגדיר תזכורת מספר דקות לפני התור.
+            </p>
+          </div>
+        </div>
+        <div class="step scaleOnHover revealLeft">
+          <p class="title">
+            המשך
+          </p>
+          <div class="stepBody">
+            <div class="iconContainer">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <p class="description">
+              הלקוח יבחר האם להמשיך במסע הקניות שלו, לאכול משהו לבינתיים או לצפות בפרסומים של בית העסק והארגונים בסביבה, תוך כדי שמירה על מקומו בתור.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+      <a class="anchor" id="advantages"></a>
+      <h1>היתרונות של Qint</h1>
+      <p class="subtitle">אפיון השירות והמוצר ע"י ניתוח השוק והבנת צרכי הלקוחות שלנו והלקוחות שלהם.</p>
+      <div class="cards">
+        <div class="card scaleOnHover revealRight">
+          <div class="iconContainer">
+            <i class="fas fa-ad"></i>
+          </div>
+          <p class="title">
+            פרסום והגדלת מכירה
+          </p>
+          <p class="description">
+            פרסמו ללקוחותיכם על בסיס נתונים, מבצעים ותכנים תוך כדי המתנתם בתור.<br/>
+            הלקוח ימשיך במסע הקניות שלו בבית העסק תוך כדי שמירה על תורו.<br/>
+            בעת ההמתנה בתור לקוחותיכם יוכלו לצפות בעסקים ומבצעים הנמצאים בקרבת מקום, ולחסוך בזמן.
+          </p>
+        </div>
+        <div class="card scaleOnHover revealBottom">
+          <div class="iconContainer">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <p class="title">
+            ניתוח נתונים, BI ו-AI
+          </p>
+          <p class="description">
+            הסקת תובנות אודות זמן המתנה בתור, אחוז נטישה של התור, זמני עומס בארגון, תזמון כוח אדם נוסף, ניתוח וניתור מודעות רלוונטיות ללקוחותיך.<br/>
+            הסקת תובנות שירותיות אודות שיערוך זמני המתנה, המלצות להזמנת תור ועוד..
+          </p>
+        </div>
+        <div class="card scaleOnHover revealLeft">
+          <div class="iconContainer">
+            <i class="fas fa-sitemap"></i>
+          </div>
+          <p class="title">
+            התממשקות למערכות חיצוניות
+          </p>
+          <p class="description">
+            המערכת מספקת אפשרות לתפעל מערך ניהול תורים בצורה נוחה תוך כדי התממשקות לנקודות מכירה, תוכנות אירוח למסעדות ומערכות ERP וCRM ותשלום באמצעות הזנת פרטי המשלם במערכת.
+          </p>
+        </div>
+        <div class="card scaleOnHover revealRight">
+          <div class="iconContainer">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <p class="title">
+            תמחור נוח לפי צריכה
+          </p>
+          <p class="description">
+            ניהול תורים ע"פ דרישה- יומי\ שבועי\ חודשי\שנתי.<br/>
+            מתאים לפסטיבלים,ימי ראיונות, הופעות, אודישנים, ימי בחירות ועוד..
+          </p>
+        </div>
+        <div class="card scaleOnHover revealBottom">
+          <div class="iconContainer">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <p class="title">
+            מניעת נטישה של התור﻿ והנגשת מידע אמין
+          </p>
+          <p class="description">
+            תמנעו מלקוחותיכם נטישה של התור בכך שתנגישו להם מידע אודות זמני ההמתנה ואפשרות להמשיך בשגרת יומם.<br/>
+            הלקוח ידע בכל שלב, בכל זמן ובכל מקום מה מצב התור.
+          </p>
+        </div>
+        <div class="card scaleOnHover revealLeft">
+          <div class="iconContainer">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <p class="title">
+            חסכו בעלויות ובזמן
+          </p>
+          <p class="description">
+            ללא עלויות חומרה, טכנאים,מסכים וקיוסקים, השירות אותו אנו מספקים מתבצע בענן בלבד.<br/>
+            חסכו זמני המתנה ללקוחותיכם ע"י הזמנת תור מרחוק והתממשקות לתוכנות מפות להערכת זמני הגעה.
+          </p>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class="scaleOnHover revealBottom">
+        <a class="anchor" id="numbers"></a>
+        <h1>קצת מספרים</h1>
+        <div class="content">
+          <p>59% ימתינו לא יותר מארבע דקות.</p>
+          <p>73% היו נוטשים את הרכישה שלהם אם הם יצטרכו לעמוד בתור של יותר מחמש דקות.</p>
+          <p>27% מהצרכנים מתעצבנים מקונים אחרים בתור, ו- 19% מהקונים אפילו התווכחו עם שותף או חבר בתור.</p>
+          <p>74% היו קונים בחנות של מתחרה אם הם תופסים את זמן התור מהיר יותר.</p>
+  
+          <div style="text-align: center; margin-top: 1em;">
+            <p>ספק לארגון וללקוחות שלך את החדשנות הראויה להם</p>
+            <a href="https://app.q-int.com/#/login" onclick="emitEvent('loginNumbers')">
+              <button class="btn callToAction">החל בתהליך</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
 
       <div class="columns">
-        <div class="column">
-          <a class="anchor" id="whatIs"></a>
-          <h2>מהי Queueint ?</h2>
-          <p>
-            Queueint היא מערכת ניהול תורים המשרתת את העסקים והציבור הרחב,
-            חוסכת זמן המתנה בתור ומאפשרת ללקוחות לשלוט על הזמן שלהם בצורה קלה, נוחה וחדשנית.
-          </p>
-          <p>
-           <b>השירות ינתן בחינם כאות סולידריות ותמיכה בעסקים עד מרץ 2021.</b>
-          </p>
-        </div>
-        <div class="column">
-          <img src="assets/queue.png"/>
-        </div>
-      </div>
-  
-      <div class="columns columnsReverse">
-        <div class="column">
-          <a class="anchor" id="howItWorks"></a>
-          <h2>
-            איך זה עובד?
-          </h2>
-          <p>
-            בעת ההגעה לתור הלקוח יסרוק קוד Qr או ישלח הודעת SMS למספר שרשום בשלט ויקבל מספר בתור.<br/>
-            לאחר שיקבל את המספר, יוכל הלקוח לבחור האם להמשיך במסע הקניות שלו, לאכול משהו לבינתיים או להמשיך להמתין בתור.<br/>
-            הלקוח יוכל להגדיר אם ירצה תזכורת מספר דקות לפני התור, וכשיגיע תורו הוא יציג את המספר לנותן השירות.
-          </p>
-        </div>
-        <div class="column">
-          <img src="assets/qr.png"/>
-        </div>
-      </div>
-  
-      <div class="columns">
-        <div class="column">
-          <a class="anchor" id="forBusiness"></a>
-          <h3>לעסקים</h3>
-          <ul>
-            <li>בקרה על מספר תורים במקביל.</li>
-            <li>הוספת תורים בהתאם לצורך.</li>
-            <li>הוספת משתמש לתור במקרה שהלקוח ללא מכשיר נייד.</li>
-            <li>פרסום תכנים ומבצעים (באישור הלקוח כמובן). </li>
-            <li>ניתוח וניתור נתונים בכל זמן נתון, זמן המתנת הלקוח, כניסת לקוחות ועוד.</li>
-            <li>לקוחות רגועים ונינוחים.</li>
-          </ul>
-        </div>
-        <div class="column">
-          <img src="assets/store.png"/>
-        </div>
-      </div>
-  
-      <div class="columns columnsReverse">
-        <div class="column">
-          <a class="anchor" id="forCustomers"></a>
-          <h3>ללקוחות</h3>
-          <ul>
-            <li>חיסכון בזמן- המשך בשגרת היום, אנו נקרא לך כשתורך יגיע.</li>
-            <li>צפיה במצב התור בכל זמן נתון ומכל מקום.</li>
-            <li>צפיה במבצעים תוך כדי המתנה לכניסה.</li>
-            <li>הוספת שמך למערכת והיא תזכור אותך בכל בית עסק בו המערכת פועלת.</li>
-            <li>רישום לתור מרחוק.</li>
-          </ul>
-        </div>
-        <div class="column">
-          <img src="assets/customers.png"/>
-        </div>
-      </div>
-  
-      <div class="columns">
-        <div class="column">
+        <div class="column scaleOnHover revealRight">
           <a class="anchor" id="contact"></a>
-          <h2>צור איתנו קשר</h2>
-          <a href="tel:+972542118143" onclick="emitEvent('contactPhone')"><button class="btn callToAction">התקשרו אלינו</button></a>
-          <a href="mailto:Service@q-int.com" onclick="emitEvent('contactEmail')"><button class="btn callToAction">כתבו לנו במייל</button></a>
+          <h2>שמרו איתנו על קשר</h2>
+          <p class="subtitle">נשמח לספק לך את השירות הטוב ביותר ולקחת חלק בצמיחת הארגון שלך</p>
+          <div class="buttonsContainer">
+            <a href="tel:+972542118143" onclick="emitEvent('contactPhone')"><button class="btn callToAction">התקשרו אלינו</button></a>
+            <a href="mailto:Service@q-int.com" onclick="emitEvent('contactEmail')"><button class="btn callToAction">כתבו לנו במייל</button></a>
+          </div>
         </div>
-        <div class="column">
-          <img src="assets/contact.png"/>
+        <div class="column revealLeft">
+          <img src="assets/mailbox.svg"/>
         </div>
       </div>
     </div>
@@ -160,10 +268,10 @@
       <div class="content">
         <p>
           כל הזכויות שמורות
-          © 2020
+          © 2021
         </p>
         <p>
-          <a href="http://www.freepik.com">גרפיקה של Freepik / macrovector</a>
+          <a href="http://www.freepik.com">גרפיקה של Freepik / macrovector</a> <a href="https://storyset.com/people">/ Freepik Storyset</a>
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
-ScrollReveal().reveal('.logo', { delay: 250 });
-ScrollReveal().reveal('.columns', { distance: '100%', opacity: 0, origin: 'right' });
-ScrollReveal().reveal('.columnsReverse', { distance: '100%', opacity: 0, origin: 'left' });
+ScrollReveal().reveal('.revealRight',  { delay: '100', distance: '100%', opacity: 0, origin: 'right' });
+ScrollReveal().reveal('.revealLeft',   { delay: '100', distance: '100%', opacity: 0, origin: 'left' });
+ScrollReveal().reveal('.revealBottom', { delay: '100', distance: '100%', opacity: 0, origin: 'bottom' });
 
 window.addEventListener('load', () => {
   const nav = document.getElementsByClassName('nav')[0];
@@ -20,8 +20,20 @@ window.addEventListener('load', () => {
 
 function emitEvent(event) {
   switch (event) {
-    case 'login': {
-      gtag('event', 'sign_up', {});
+    case 'loginHeader': {
+      gtag('event', 'sign_up', { event_category: 'engagement', value: 'header' });
+      break;
+    }
+    case 'loginFreeQueues': {
+      gtag('event', 'sign_up', { event_category: 'engagement', value: 'freeQueues' });
+      break;
+    }
+    case 'loginAdvertise': {
+      gtag('event', 'sign_up', { event_category: 'engagement', value: 'freeQueues' });
+      break;
+    }
+    case 'loginNumbers': {
+      gtag('event', 'sign_up', { event_category: 'engagement', value: 'numbers' });
       break;
     }
     case 'contactPhone': {
