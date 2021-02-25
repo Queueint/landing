@@ -154,6 +154,7 @@ hr {
   .header .nav .navContent a {
     color: #666;
     text-align: right;
+    text-align: start;
     padding: 0.25em 0;
   }
 }
@@ -164,9 +165,15 @@ hr {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 520px) {
   .logo {
     display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header a {
+    font-size: 0.66em;
   }
 }
 
@@ -217,7 +224,7 @@ hr {
 
 .aboveTheFold .column h1 {
   width: 100%;
-  text-align: right;
+  text-align: start;
   font-size: 2em;
   margin-bottom: 1em;
 }
@@ -297,6 +304,7 @@ hr {
 .steps .step .title {
   font-weight: bold;
   text-align: right;
+  text-align: start;
   font-size: 1.5em;
   margin: 0 2.5em 0.5em 0;
 }
@@ -322,7 +330,7 @@ hr {
 
 .steps .step .description {
   font-size: 0.8em;
-  text-align: right;
+  text-align: start;
   flex-grow: 1;
 }
 
@@ -378,12 +386,14 @@ hr {
 .cards .card .title {
   font-weight: bold;
   text-align: right;
+  text-align: start;
   margin: 0 0.75em;
 }
 
 .cards .card .description {
   font-size: 0.8em;
   text-align: right;
+  text-align: start;
   margin: 0;
 }
 

@@ -1,0 +1,13 @@
+@media screen and (max-width: 920px) {
+  .steps .step .title {
+    margin-right: 0;
+    margin-left: 2.5em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header .nav.active .navContent {
+    right: initial;
+    left: 0;
+  }
+}
