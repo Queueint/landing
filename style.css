@@ -374,10 +374,17 @@ hr {
   border-radius: 50%;
 }
 
+.cards .card .cardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 0.5em;
+}
+
 .cards .card .title {
   font-weight: bold;
   text-align: right;
-  margin: 0.5em 0;
+  margin: 0 0.75em;
 }
 
 .cards .card .description {
