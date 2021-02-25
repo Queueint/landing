@@ -79,6 +79,7 @@ hr {
   display: flex;
   align-content: flex-end;
   align-items: baseline;
+  justify-content: space-evenly;
   flex-grow: 1;
   position: relative;
 }
