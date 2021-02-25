@@ -205,8 +205,10 @@ hr {
   margin-top: 1em;
 }
 
-.aboveTheFold {
-  height: calc(100vh - 3.5rem);
+.screen {
+  min-height: calc(100vh - 3.5rem);
+  align-items: center;
+  justify-content: center;
 }
 
 .aboveTheFold h1 {
