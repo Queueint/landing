@@ -209,6 +209,10 @@ hr {
   height: calc(100vh - 3.5rem);
 }
 
+.aboveTheFold h1 {
+  color: #424242;
+}
+
 .aboveTheFold .btn {
   font-size: 0.75em;
 }
