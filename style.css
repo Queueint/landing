@@ -158,11 +158,13 @@ hr {
     position: absolute;
     top: 0;
     right: 0;
+    border-radius: 1em;
   }
   
   .header .nav .navContent a {
     color: #666;
     text-align: right;
+    padding: 0.25em 0;
   }
 }
 
