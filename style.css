@@ -197,9 +197,13 @@ hr {
 
 .subtitle {
   font-size: 1em;
-  color: #89a7b6;
+  color: #3b6073;
   text-align: center;
   margin-top: 1em;
+}
+
+.aboveTheFold {
+  height: calc(100vh - 3.5rem);
 }
 
 .aboveTheFold .btn {
@@ -313,6 +317,7 @@ hr {
 }
 
 .steps .step .description {
+  font-size: 0.8em;
   text-align: right;
   flex-grow: 1;
 }
@@ -366,6 +371,7 @@ hr {
 }
 
 .cards .card .description {
+  font-size: 0.8em;
   text-align: right;
   margin: 0;
 }
