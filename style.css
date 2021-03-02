@@ -383,7 +383,7 @@ hr {
 .cards .card .cardHeader {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 0.5em;
 }
 
