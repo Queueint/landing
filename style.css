@@ -214,6 +214,10 @@ hr {
   color: #424242;
 }
 
+.aboveTheFold .buttonsContainer {
+  justify-content: space-between;
+}
+
 .aboveTheFold .btn {
   font-size: 0.75em;
 }
@@ -461,6 +465,7 @@ hr {
 .buttonsContainer a .btn {
   width: 100%;
   padding: 0.5em 1em;
+  margin: 0;
 }
 
 .footer {
