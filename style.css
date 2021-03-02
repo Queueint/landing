@@ -295,6 +295,8 @@ hr {
 .steps {
   display: flex;
   flex-direction: row;
+  max-width: 1280px;
+  margin: auto;
   margin-top: 0.5em;
   margin-bottom: 1em;
   padding: 0 0.5em;
@@ -303,6 +305,7 @@ hr {
 .steps .step {
   flex-grow: 1;
   flex-shrink: 1;
+  margin: 0 0.5em;
 }
 
 .steps .step .title {
@@ -360,6 +363,8 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 1280px;
+  margin: auto;
   margin-top: 0.5em;
   padding: 0 0.5em;
 }
