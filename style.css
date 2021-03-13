@@ -205,9 +205,27 @@ hr {
 }
 
 .screen {
+  display: flex;
   min-height: calc(100vh - 3.5rem);
   align-items: center;
   justify-content: center;
+  background-color: #e0f5ff;
+  background-image: linear-gradient(#e0f5ff, #e0fcff);
+}
+
+.screen.alt1 {
+  background-color: #e0fcff;
+  background-image: linear-gradient(#e0fcff, #e0fffa);
+}
+
+.screen.alt2 {
+  background-color: #e0fffa;
+  background-image: linear-gradient(#e0fffa, #e0fff2);
+}
+
+.screen.alt3 {
+  background-color: #e0fff2;
+  background-image: linear-gradient(#e0fff2, #e0ffeb);
 }
 
 .aboveTheFold h1 {
@@ -236,6 +254,7 @@ hr {
 .columns {
   display: flex;
   flex-direction: row;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 16px;
@@ -474,7 +493,7 @@ hr {
 }
 
 .footer {
-  background-color: #FFF;
+  background-color: #e0ffe3;
   font-size: 0.75em;
 }
 
