@@ -1,6 +1,13 @@
 ScrollReveal().reveal('.revealRight',  { delay: '100', distance: '100%', opacity: 0, origin: 'right' });
 ScrollReveal().reveal('.revealLeft',   { delay: '100', distance: '100%', opacity: 0, origin: 'left' });
 ScrollReveal().reveal('.revealBottom', { delay: '100', distance: '100%', opacity: 0, origin: 'bottom' });
+ScrollReveal().reveal('.iconContainer', {
+  delay: '0',
+  duration: '2000',
+  rotate: {z: 180},
+  scale: 0,
+  reset: true,
+});
 
 window.addEventListener('load', () => {
   const nav = document.getElementsByClassName('nav')[0];
