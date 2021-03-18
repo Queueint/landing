@@ -39,10 +39,6 @@ function emitEvent(event) {
       gtag('event', 'sign_up', { event_category: 'engagement', value: 'bottom' });
       break;
     }
-    case 'contactAdvertise': {
-      gtag('event', 'contact', { event_category: 'engagement', value: 'advertise' });
-      break;
-    }
     case 'contactPhone': {
       gtag('event', 'contact', { event_category: 'engagement', value: 'phone' });
       break;
