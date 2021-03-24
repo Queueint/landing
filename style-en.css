@@ -1,7 +1,16 @@
+.steps .step .title {
+  margin: 0 0 0.5em 2.5em;
+}
+
+.steps .step .iconContainer {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
 @media screen and (max-width: 920px) {
   .steps .step .title {
     margin-right: 0;
-    margin-left: 2.5em;
+    margin-left: 1.5em;
   }
 }
 

@@ -205,13 +205,35 @@ hr {
 }
 
 .screen {
+  display: flex;
   min-height: calc(100vh - 3.5rem);
   align-items: center;
   justify-content: center;
+  background-color: #e0f5ff;
+  background-image: linear-gradient(#e0f5ff, #e0fcff);
+}
+
+.screen.alt1 {
+  background-color: #e0fcff;
+  background-image: linear-gradient(#e0fcff, #e0fffa);
+}
+
+.screen.alt2 {
+  background-color: #e0fffa;
+  background-image: linear-gradient(#e0fffa, #e0fff2);
+}
+
+.screen.alt3 {
+  background-color: #e0fff2;
+  background-image: linear-gradient(#e0fff2, #e0ffeb);
 }
 
 .aboveTheFold h1 {
   color: #424242;
+}
+
+.aboveTheFold .buttonsContainer {
+  justify-content: space-between;
 }
 
 .aboveTheFold .btn {
@@ -232,6 +254,7 @@ hr {
 .columns {
   display: flex;
   flex-direction: row;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 16px;
@@ -291,6 +314,8 @@ hr {
 .steps {
   display: flex;
   flex-direction: row;
+  max-width: 1280px;
+  margin: auto;
   margin-top: 0.5em;
   margin-bottom: 1em;
   padding: 0 0.5em;
@@ -299,6 +324,7 @@ hr {
 .steps .step {
   flex-grow: 1;
   flex-shrink: 1;
+  margin: 0 0.5em;
 }
 
 .steps .step .title {
@@ -322,7 +348,7 @@ hr {
   font-size: 1.5em;
   height: 1em;
   padding: 0.5em;
-  background-color: #b1e5ff;
+  background-color: #badaea;
   color: #426373;
   border-radius: 50%;
   margin-left: 0.5em;
@@ -344,7 +370,7 @@ hr {
   }
 
   .steps .step .title {
-    margin-right: 2.5em;
+    margin-right: 1.5em;
   }
 
   .steps .step .iconContainer {
@@ -356,6 +382,8 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 1280px;
+  margin: auto;
   margin-top: 0.5em;
   padding: 0 0.5em;
 }
@@ -371,7 +399,7 @@ hr {
   font-size: 1.5em;
   height: 1em;
   padding: 0.5em;
-  background-color: #b1e5ff;
+  background-color: #badaea;
   color: #426373;
   border-radius: 50%;
 }
@@ -379,7 +407,7 @@ hr {
 .cards .card .cardHeader {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 0.5em;
 }
 
@@ -461,10 +489,11 @@ hr {
 .buttonsContainer a .btn {
   width: 100%;
   padding: 0.5em 1em;
+  margin: 0;
 }
 
 .footer {
-  background-color: #FFF;
+  background-color: #e0ffe3;
   font-size: 0.75em;
 }
 
