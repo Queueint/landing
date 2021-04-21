@@ -81,7 +81,7 @@ hr {
 
 .header .nav .btn.burger {
   display: none;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 0.7em;
   color: #888;
 }
 
@@ -445,7 +445,7 @@ hr {
   border: none;
   border-radius: 1em/50%;
   font-size: 1em;
-  padding: 0.5em 2em;
+  padding: 0.5em 0.7em;
   margin: 0.5em;
   margin-top: 1em;
   background-color: #fff;
@@ -466,7 +466,7 @@ hr {
 .btn.callToAction {
   background-color: #144B76;
   color: #E0F3FF;
-  font-weight: bold;
+  font-weight: bold;  
 }
 
 .btn.callToAction:hover {
