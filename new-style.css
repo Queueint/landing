@@ -41,18 +41,18 @@
     font-size: 32px;
     position: absolute;
     top: 2.125em;
-    right: 2.3125em;
+    right: 1.75em;
     transition: top 0.3s;
     background: transparent;
     color: #fff;
     padding: 0;
-    transform: translate(-25%, -25%);
+    transform: translate(100%, -25%);
 }
 
 html[dir="rtl"] .header .nav .nav-content .new-btn.close {
     right: initial;
-    left: 2.3125em;
-    transform: translate(0, -25%);
+    left: 1.75em;
+    transform: translate(-125%, -25%);
 }
 
 .header .nav a {
@@ -194,6 +194,11 @@ html[dir="rtl"] .header .burger {
 @media screen and (max-width: 1117px) {
     .header.scrolled {
         border-radius: 0 0 0.5em 0.5em;
+    }
+
+    .header .header-content {
+        padding-left: 1.75em;
+        padding-right: 1.75em;
     }
 
     .header .burger {
