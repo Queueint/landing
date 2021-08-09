@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   font-family: 'Varela Round', sans-serif;
   font-size: 24px;
-  background-color: #DEF4FF;
+  background-color: #fff;
   width: 100vw;
   overflow-x: hidden;
   color: #424242;
@@ -87,29 +87,6 @@ hr {
 .screen.alt3 {
   background-color: #e0fff2;
   background-image: linear-gradient(#e0fff2, #e0ffeb);
-}
-
-.aboveTheFold h1 {
-  color: #424242;
-}
-
-.aboveTheFold .buttonsContainer {
-  justify-content: space-between;
-}
-
-.aboveTheFold .btn {
-  font-size: 0.75em;
-}
-
-.aboveTheFold .subtitle {
-  font-size: 0.75em;
-}
-
-.aboveTheFold .column h1 {
-  width: 100%;
-  text-align: start;
-  font-size: 2em;
-  margin-bottom: 1em;
 }
 
 .columns {
