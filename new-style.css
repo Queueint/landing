@@ -1,0 +1,253 @@
+/* Default style */
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 0 0 1em 1em;
+}
+
+.header .header-content {
+    padding-left: 4.625em;
+    padding-right: 4.625em;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.header .logo {
+    height: 4.25em;
+}
+
+.header .nav {
+    flex-grow: 1;
+    position: relative;
+}
+
+.header .nav.active {
+    position: initial; /* So that on mobile it's full screen */
+}
+
+.header .nav .nav-content {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .nav .nav-content .new-btn.close {
+    display: none;
+    font-size: 32px;
+    position: absolute;
+    top: 2.125em;
+    right: 2.3125em;
+    transition: top 0.3s;
+    background: transparent;
+    color: #fff;
+    padding: 0;
+    transform: translate(-25%, -25%);
+}
+
+html[dir="rtl"] .header .nav .nav-content .new-btn.close {
+    right: initial;
+    left: 2.3125em;
+    transform: translate(0, -25%);
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1.75em;
+    height: auto;
+    transition: color 0.3s;
+}
+
+.header .nav a.current {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header .new-btn {
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #fff;
+    color: #5bc6f9;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.3125em;
+    border: 0;
+    padding: 0.25em 2.125em;
+    cursor: pointer;
+}
+
+.select {
+    position: relative;
+}
+
+.select .select-label {
+    font-size: 1em;
+    background-color: transparent;
+    color: #fff;
+    transition: color 0.3s;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.select .select-label .icon {
+    margin-inline-end: 0.35em;
+}
+
+.select .select-label .chevron {
+    margin-inline-start: 0.75em;
+    height: 1.25em; /* To center vertically */
+}
+
+.select .select-options {
+    display: none;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #5bc6f9;
+}
+
+.select .select-options a {
+    margin: 0;
+}
+
+.select.active .select-options {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 100%);
+}
+
+.select .select-options .select-option {
+    color: #5bc6f9;
+    background-color: #fff;
+    border: 1px solid #5bc6f9;
+}
+
+.select .select-options .select-option:hover {
+    color: #fff;
+    background-color: #5fcf90;
+}
+
+.header .burger {
+    display: none;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    font-size: 2em;
+    background-color: transparent;
+    padding: 0;
+    color: #fff;
+}
+
+html[dir="rtl"] .header .burger {
+    right: initial;
+    left: 0;
+}
+
+/* Scrolled default style */
+
+.header.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+}
+
+.header.scrolled .header-content {
+    padding-top: 0;
+}
+
+.header.scrolled .nav a {
+    color: #48c1fb;
+}
+
+.header.scrolled .select-label {
+    color: #48c1fb;
+}
+
+.header.scrolled .new-btn {
+    background-color: #ff8657;
+    color: #fff;
+}
+
+.header.scrolled .burger {
+    background-color: transparent;
+    color: #5bc6f9;
+}
+
+/* Mobile style */
+
+@media screen and (max-width: 1117px) {
+    .header.scrolled {
+        border-radius: 0 0 0.5em 0.5em;
+    }
+
+    .header .burger {
+        display: block;
+    }
+
+    .header .nav .nav-content {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5bc6f9;
+        color: #fff;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+    .header .nav .nav-content .new-btn.close {
+        display: block;
+    }
+    
+    .header .nav.active .nav-content {
+        display: flex;
+    }
+
+    .header .nav .nav-content .nav-item {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        min-width: 8em;
+        text-align: center;
+    }
+
+    .header .nav .nav-content .nav-item:not(:last-child) {
+        border-bottom: 1px solid #fff;
+    }
+
+    /* Scrolled mobile style */
+
+    .header.scrolled .nav .nav-content .new-btn.close {
+        top: 0.75em;
+    }
+
+    .header.scrolled .nav .nav-content .nav-item,
+    .header.scrolled .select .select-label {
+        color: #fff;
+    }
+
+    .header.scrolled .new-btn {
+        background-color: #fff;
+        color: #5bc6f9;
+    }
+}

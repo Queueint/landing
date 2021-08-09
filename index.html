@@ -11,8 +11,11 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style-en.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="new-style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BQQR6MVJ"></script>
@@ -47,27 +50,42 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <div class="header">
-    <div class="content">
+    <div class="header-content">
       <img src="assets/logo.svg" class="logo" />
 
       <div class="nav">
-        <button type="button" class="btn burger">
+        <button type="button" class="new-btn burger">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="navContent">
-          <a href="#whatIs">What is Qint?</a>
-          <a href="#howItWorks">How does it work?</a>
-          <a href="#advantages">Advantages of Qint</a>
-          <a href="#contact">Contact us</a>
-        </div>
-        <a href="hebrew.html">
-          עברית
-        </a>
-        <a class="loginLink" href="https://app.q-int.com/#/login" onclick="emitEvent('loginHeader')">
-          <button class="btn callToAction">
-            Login
+        <div class="nav-content">
+          <button class="new-btn close">
+            <i class="fas fa-times"></i>
           </button>
-        </a>
+          <a href="#whatIs" class="nav-item">Home</a>
+          <a href="#howItWorks" class="nav-item">How it works</a>
+          <a href="#advantages" class="nav-item">Advantages</a>
+          <a href="#contact" class="nav-item">Contact us</a>
+          <a href="https://app.q-int.com/#/login" class="nav-item" onclick="emitEvent('loginHeader')">
+            <button class="new-btn">
+              Log in
+            </button>
+          </a>
+          <div class="select nav-item">
+            <button class="select-label">
+              <i class="fas fa-globe icon"></i>
+              ENG
+              <i class="fas fa-sort-down chevron"></i>
+            </button>
+            <div class="select-options">
+              <a href="index.html">
+                <div class="select-option">ENG</div>
+              </a>
+              <a href="hebrew.html">
+                <div class="select-option">עבר</div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

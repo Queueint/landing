@@ -13,10 +13,3 @@
     margin-left: 1.5em;
   }
 }
-
-@media screen and (max-width: 670px) {
-  .header .nav.active .navContent {
-    right: initial;
-    left: 0;
-  }
-}
