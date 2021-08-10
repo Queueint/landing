@@ -401,6 +401,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     padding: 0 6.25rem;
     margin: 0;
     line-height: 1em;
+    text-align: start;
 }
 
 .contact-screen .flex-row {
