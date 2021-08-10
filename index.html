@@ -11,8 +11,11 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style-en.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="new-style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BQQR6MVJ"></script>
@@ -46,60 +49,74 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <div class="decorative-circle"></div>
+
   <div class="header">
-    <div class="content">
+    <div class="header-content">
       <img src="assets/logo.svg" class="logo" />
 
       <div class="nav">
-        <button type="button" class="btn burger">
+        <button type="button" class="new-btn burger">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="navContent">
-          <a href="#whatIs">What is Qint?</a>
-          <a href="#howItWorks">How does it work?</a>
-          <a href="#advantages">Advantages of Qint</a>
-          <a href="#contact">Contact us</a>
-        </div>
-        <a href="hebrew.html">
-          עברית
-        </a>
-        <a class="loginLink" href="https://app.q-int.com/#/login" onclick="emitEvent('loginHeader')">
-          <button class="btn callToAction">
-            Login
+        <div class="nav-content">
+          <button class="new-btn close">
+            <i class="fas fa-times"></i>
           </button>
-        </a>
+          <a href="#whatIs" class="nav-item">Home</a>
+          <a href="#howItWorks" class="nav-item">How it works</a>
+          <a href="#advantages" class="nav-item">Advantages</a>
+          <a href="#contact" class="nav-item">Contact us</a>
+          <a href="https://app.q-int.com/#/login" class="nav-item" onclick="emitEvent('loginHeader')">
+            <button class="new-btn">
+              Log in
+            </button>
+          </a>
+          <div class="select nav-item">
+            <button class="select-label">
+              <i class="fas fa-globe icon"></i>
+              ENG
+              <i class="fas fa-sort-down chevron"></i>
+            </button>
+            <div class="select-options">
+              <a href="index.html">
+                <div class="select-option">ENG</div>
+              </a>
+              <a href="hebrew.html">
+                <div class="select-option">עבר</div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="body">
     <a class="anchor" id="whatIs"></a>
-    <div class="screen">
-      <div class="aboveTheFold columns">
-        <div class="column revealLeft">
-          <h1>
-            <span style="color: #6CB310">Intelligent</span>
-            queue management system
-          </h1>
-          <p>
-            Qint provides queue management system
-            <b>efficiency and without hardware and maintenance costs</b>
+    <div class="above-the-fold">
+      <div class="above-the-fold-content">
+        <h1>
+          Your <b>time -</b> Our <b>responsibility</b>
+        </h1>
+        <p>
+          Qint provides queue management system
+          <b>efficiency and without hardware and maintenance costs</b>
 
-            while
-            <b>advertising</b> to customers,
-            <b>analyzing data</b>
-            and preventing queue abandonment.
-          </p>
-          <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginFreeQueues')">
-            <button class="btn callToAction">
-              Register now
-            </button>
-          </a>
-          <p class="subtitle">*Free of charge, no credit card required</p>
-        </div>
-        <div class="column revealRight">
-          <img src="assets/queue.svg" />
-        </div>
+          while
+          <b>advertising</b> to customers,
+          <b>analyzing data</b>
+          and preventing queue abandonment.
+        </p>
+        <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginFreeQueues')">
+          <button class="new-btn">
+            Register now
+          </button>
+        </a>
+        <p class="new-subtitle">*Free of charge, no credit card required</p>
+      </div>
+      <div class="graphic">
+        <img src="assets/phones.png" class="revealBottom" />
       </div>
     </div>
 
@@ -154,6 +171,12 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class ="wave">
+      <svg viewBox="0 0 180 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 10 C 40 0, 65 0, 90 10 S 160 20, 180 10 L 180 20 L 0 20 Z"/>
+      </svg>
     </div>
 
     <a class="anchor" id="advantages"></a>
@@ -249,14 +272,14 @@
             </p>
           </div>
         </div>
-
-        <div class="content revealBottom" style="text-align: center; margin-top: 1em">
-          <p>Provide your organization and customers the innovation they deserve</p>
-          <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginBottom')">
-            <button class="btn callToAction">Let&apos;s begin</button>
-          </a>
-        </div>
       </div>
+    </div>
+
+    <div class="bottom-cta revealBottom">
+      <p>Provide your organization and customers the innovation they deserve</p>
+      <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginBottom')">
+        <button class="new-btn">Let&apos;s begin</button>
+      </a>
     </div>
 
     <a class="anchor" id="contact"></a>

@@ -10,6 +10,7 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="new-style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
@@ -45,61 +46,74 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <div class="decorative-circle"></div>
+
   <div class="header">
-    <div class="content">
+    <div class="header-content">
       <img src="assets/logo.svg" class="logo" />
 
       <div class="nav">
-        <button type="button" class="btn burger">
+        <button type="button" class="new-btn burger">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="navContent">
-          <a href="#whatIs">מה זה Qint?</a>
-          <a href="#howItWorks">איך זה עובד?</a>
-          <a href="#advantages">היתרונות של Qint</a>
-          <a href="#contact">צור קשר</a>
-        </div>
-        <a href="index.html">
-          English
-        </a>
-        <a class="loginLink" href="https://app.q-int.com/#/login" onclick="emitEvent('loginHeader')">
-          <button class="btn callToAction">
-            להתחברות
+        <div class="nav-content">
+          <button class="new-btn close">
+            <i class="fas fa-times"></i>
           </button>
-        </a>
+          <a href="#whatIs" class="nav-item">מה זה Qint?</a>
+          <a href="#howItWorks" class="nav-item">איך זה עובד?</a>
+          <a href="#advantages" class="nav-item">הייתרונות של Qint</a>
+          <a href="#contact" class="nav-item">צור קשר</a>
+          <a href="https://app.q-int.com/#/login" class="nav-item" onclick="emitEvent('loginHeader')">
+            <button class="new-btn">
+              להתחברות
+            </button>
+          </a>
+          <div class="select nav-item">
+            <button class="select-label">
+              <i class="fas fa-globe icon"></i>
+              עבר
+              <i class="fas fa-sort-down chevron"></i>
+            </button>
+            <div class="select-options">
+              <a href="index.html">
+                <div class="select-option">ENG</div>
+              </a>
+              <a href="hebrew.html">
+                <div class="select-option">עבר</div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="body">
     <a class="anchor" id="whatIs"></a>
-    <div class="screen">
-      <div class="aboveTheFold columns">
-        <div class="column revealRight">
-          <h1>
-            מערכת
-            <span style="color: #6CB310">חכמה</span>
-            לניהול תורים
-          </h1>
-          <p>
-            Qint מספקת הקמת מערך לניהול תורים
-            <b>ביעילות, ללא עלויות חומרה ותחזוקה</b>
-            תוך כדי
-            <b>פרסום</b>
-            ללקוחות,
-            <b>ניתוח נתונים</b>
-            ומניעת נטישת התורים.
-          </p>
-          <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginFreeQueues')">
-            <button class="btn callToAction">
-              להרשמה
-            </button>
-          </a>
-          <p class="subtitle">*ללא תשלום וללא פרטי אשראי</p>
-        </div>
-        <div class="column revealLeft">
-          <img src="assets/queue.svg" />
-        </div>
+    <div class="above-the-fold">
+      <div class="above-the-fold-content">
+        <h1>
+          <b>הזמן</b> שלך - <b>האחריות</b> שלנו
+        </h1>
+        <p>
+          Qint מספקת הקמת מערך לניהול תורים
+          <b>ביעילות, ללא עלויות חומרה ותחזוקה</b>
+          תוך כדי
+          <b>פרסום</b>
+          ללקוחות,
+          <b>ניתוח נתונים</b>
+          ומניעת נטישת התורים.
+        </p>
+        <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginFreeQueues')">
+          <button class="new-btn">
+            להרשמה
+          </button>
+        </a>
+        <p class="new-subtitle">*ללא תשלום וללא פרטי אשראי</p>
+      </div>
+      <div class="graphic">
+        <img src="assets/phones.png" class="revealBottom" />
       </div>
     </div>
 
@@ -154,6 +168,12 @@
       </div>
     </div>
 
+    <div class ="wave">
+      <svg viewBox="0 0 180 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 10 C 40 0, 65 0, 90 10 S 160 20, 180 10 L 180 20 L 0 20 Z"/>
+      </svg>
+    </div>
+    
     <a class="anchor" id="advantages"></a>
     <div class="screen alt2">
       <div>
@@ -245,14 +265,14 @@
             </p>
           </div>
         </div>
-
-        <div class="content revealBottom" style="text-align: center; margin-top: 1em">
-          <p>ספק לארגון וללקוחות שלך את החדשנות הראויה להם</p>
-          <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginBottom')">
-            <button class="btn callToAction">החלו בתהליך</button>
-          </a>
-        </div>
       </div>
+    </div>
+
+    <div class="bottom-cta revealBottom">
+      <p>ספק לארגון וללקוחות שלך את החדשנות הראויה להם</p>
+      <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginBottom')">
+        <button class="new-btn">החלו בתהליך</button>
+      </a>
     </div>
 
     <a class="anchor" id="contact"></a>

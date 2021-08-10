@@ -13,17 +13,11 @@
     margin-left: 1.5em;
   }
 }
-
-@media screen and (max-width: 670px) {
-  .header .nav.active .navContent {
-    right: initial;
-    left: 0;
-  }
-}
-
 .footer navbar {
   margin-left: auto;
 }
 .footerLogo {
   margin-right: auto;
 }
+
+
