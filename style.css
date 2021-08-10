@@ -263,12 +263,6 @@ hr {
   margin: 0;
 }
 
-@media screen and (max-width: 1000px) {
-  .cards .card {
-    max-width: 50%;
-  }
-}
-
 @media screen and (max-width: 640px) {
   .cards {
     flex-direction: column;
@@ -410,42 +404,35 @@ html[dir='rtl'] .covid .imageCovid {
   align-items: flex-end;
 }
 
-@media screen and (max-width: 1117px){
-  .covid {
-    background-color:#5BC6F9;
-    position: relative;
-  }
-
-  .covid .covid-content .covid-container {
-    display: flex;
+@media screen and (max-width: 1000px) {
+  .cards .card {
+    max-width: 50%;
   }
 
   .covid .covid-content .covid-container p {
     color:#fff;
     text-align: start;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-inline-start: 0.75em;
   }
 
   .covid .covid-content h1{
     color:#fff;
     text-align: center ;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
   }
 
   html[dir="rtl"] .covid .covid-content h1 {
     color:#fff;
     right:initial;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
   }
 
   html[dir="rtl"] .covid .covid-content .covid-container p {
     color:#fff;
     text-align: start;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
   }
 
   .covid .imageCovid {
@@ -462,5 +449,4 @@ html[dir='rtl'] .covid .imageCovid {
     right:initial;
     left: 0;
   }
-
 }
