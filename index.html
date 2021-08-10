@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BQQR6MVJ"></script>
@@ -117,7 +118,7 @@
         <p class="new-subtitle">*Free of charge, no credit card required</p>
       </div>
       <div class="graphic">
-        <img src="assets/phones.png" />
+        <img src="assets/phones.png" class="revealBottom" />
       </div>
     </div>
 
@@ -174,98 +175,77 @@
       </div>
     </div>
 
+    <div class="wave">
+      <svg viewBox="0 0 180 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 10 C 40 0, 65 0, 90 10 S 160 20, 180 10 L 180 20 L 0 20 Z" />
+      </svg>
+    </div>
+
     <a class="anchor" id="advantages"></a>
-    <div class="screen alt2">
-      <div>
-        <h1>Advantages of Qint</h1>
-        <p class="subtitle">Disruptive innovative queue management solution</p>
-        <div class="cards">
-          <div class="card revealLeft">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-ad"></i>
-              </div>
-              <p class="title">
-                Marketing and increase in sales
-              </p>
-            </div>
+    <div class="advantages-screen">
+      <h1>Our <b>Advantages</b></h1>
+      <div class="snake new-content">
+        <div class="snake-item">
+          <div>
+            <p class="title">Marketing and increase in sales</p>
             <p class="description">
               Advertise to your customers based on data, sales and content while they're waiting in queue.<br />
-              The customer will continue their journey in the business while their place in queue is preserved.<br />
+              The customer will continue their journey in the business while their place in queue is preserved.
             </p>
           </div>
-          <div class="card revealBottom">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-chart-pie"></i>
-              </div>
-              <p class="title">
-                Data analysis, BI and AI
-              </p>
-            </div>
+          <img src="assets/target.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Data analysis, BI and AI</p>
             <p class="description">
               Draw insights regarding waiting times, queue abandonment rates, peak hours, manpower scheduling, analysis
-              and monitoring of relevant advertisements for your customers and more...<br />
+              and monitoring of relevant advertisements for your customers and more...
             </p>
           </div>
-          <div class="card revealRight">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-sitemap"></i>
-              </div>
-              <p class="title">
-                Interfacing with external systems
-              </p>
-            </div>
+          <img src="assets/charts.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Interfacing with external systems</p>
             <p class="description">
               The system allows convenient queue management while interfacing to point of sale systems, restaurant
               hosting software, ERP and CRM systems, and billing
             </p>
           </div>
-          <div class="card revealLeft">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-hand-holding-usd"></i>
-              </div>
-              <p class="title">
-                Comfortable usage-based pricing
-              </p>
-            </div>
-            <p class="description">
-              Queue management as needed - daily / weekly / monthly / yearly.
-              Suitable for festivals, interview days, shows, auditions, election days and more...
-            </p>
-          </div>
-          <div class="card revealBottom">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-handshake"></i>
-              </div>
-              <p class="title">
-                Prevent queue abandonment and provide real time data
-              </p>
-            </div>
+          <img src="assets/interfaces.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Prevent queue abandonment and provide real time data</p>
             <p class="description">
               Prevent your customers from abandoning the queue by serving them information about waiting times and the
               possibility of continuing their daily routine.<br />
               The customers will know at every point, all times and in all places the state of the queue.
             </p>
           </div>
-          <div class="card revealRight">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <p class="title">
-                Save time and money
-              </p>
-            </div>
+          <img src="assets/leaver.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Comfortable usage-based pricing</p>
+            <p class="description">
+              Queue management as needed - daily / weekly / monthly / yearly.
+              Suitable for festivals, interview days, shows, auditions, election days and more...
+            </p>
+          </div>
+          <img src="assets/pricing.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Save time and money</p>
             <p class="description">
               Without hardware costs, technicians, screens and kiosks, the service we offer is cloud-only.<br />
               Save waiting time for your customers by allowing them to enqueue remotely, and interface with GIS for
               estimating arrival times.
             </p>
           </div>
+          <img src="assets/timing.svg" />
         </div>
       </div>
     </div>
@@ -315,6 +295,12 @@
       </p>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="index.js"></script>
 
