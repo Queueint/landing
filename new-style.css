@@ -338,7 +338,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #5bc6f9;
         color: #fff;
         z-index: 2; /* Above logo and atf content */
