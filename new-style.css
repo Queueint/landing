@@ -76,6 +76,10 @@ html[dir="rtl"] .header .nav .nav-content .new-btn.close {
     text-transform: uppercase;
 }
 
+.header .nav a:hover {
+    font-weight: bold;
+}
+
 .header .new-btn {
     font-size: 1em;
     font-weight: 500;
