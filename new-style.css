@@ -951,8 +951,6 @@ html[dir='rtl'] .covid .imageCovid {
     }
 
     /*Covid*/
-
-    
     
     .covid .covid-content .covid-container p {
         padding-left: 0.75em;
@@ -965,19 +963,9 @@ html[dir='rtl'] .covid .imageCovid {
         padding-inline-end: 0.75em;
     }
     
-    html[dir="rtl"] .covid .covid-content h1 {
-        padding-inline-start: 0.75em;
-        padding-inline-end: 0.75em;
-    }
-    
-    html[dir="rtl"] .covid .covid-content .covid-container p {
-        text-align: start;
-    }
-    
     .covid .imageCovid {
         width: 5em;
         height: 5em;
-        align-items:flex-end;
     }
     
     html[dir='rtl'] .covid .imageCovid {
