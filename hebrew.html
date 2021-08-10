@@ -1,311 +1,337 @@
 <!DOCTYPE html>
 <html dir="rtl">
-  <head>
-    <meta name="google-site-verification" content="mdvcfvNUTjWdN9RMEXr2EHSmlt9J5azzv1pL7PedZUg" />
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
-    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
-    <title>Queueint</title>
-    
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BQQR6MVJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-P2BQQR6MVJ');
-    </script>
-    
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NQC8QTW');
-    </script>
-    <!-- End Google Tag Manager -->
+<head>
+  <meta name="google-site-verification" content="mdvcfvNUTjWdN9RMEXr2EHSmlt9J5azzv1pL7PedZUg" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+  <title>Queueint</title>
 
-    <!-- ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQC8QTW"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <div class="header">
-      <div class="content">
-        <img src="assets/logo.svg" class="logo"/>
-        
-        <div class="nav">
-          <button type="button" class="btn burger">
-            <i class="fas fa-bars"></i>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="new-style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BQQR6MVJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-P2BQQR6MVJ');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NQC8QTW');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQC8QTW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="decorative-circle"></div>
+
+  <div class="header">
+    <div class="header-content">
+      <img src="assets/logo.svg" class="logo" />
+
+      <div class="nav">
+        <button type="button" class="new-btn burger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-content">
+          <button class="new-btn close">
+            <i class="fas fa-times"></i>
           </button>
-          <div class="navContent">
-            <a href="#whatIs">מה זה Qint?</a>
-            <a href="#howItWorks">איך זה עובד?</a>
-            <a href="#advantages">היתרונות של Qint</a>
-            <a href="#contact">צור קשר</a>
-          </div>
-          <a href="index.html">
-            English
-          </a>
-          <a class="loginLink" href="https://app.q-int.com/#/login" onclick="emitEvent('loginHeader')">
-            <button class="btn callToAction">
+          <a href="#whatIs" class="nav-item">מה זה Qint?</a>
+          <a href="#howItWorks" class="nav-item">איך זה עובד?</a>
+          <a href="#advantages" class="nav-item">הייתרונות של Qint</a>
+          <a href="#contact" class="nav-item">צור קשר</a>
+          <a href="https://app.q-int.com/#/login" class="nav-item" onclick="emitEvent('loginHeader')">
+            <button class="new-btn">
               להתחברות
             </button>
           </a>
+          <div class="select nav-item">
+            <button class="select-label">
+              <i class="fas fa-globe icon"></i>
+              עבר
+              <i class="fas fa-sort-down chevron"></i>
+            </button>
+            <div class="select-options">
+              <a href="index.html">
+                <div class="select-option">ENG</div>
+              </a>
+              <a href="hebrew.html">
+                <div class="select-option">עבר</div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
-    <div class="body">
-      <a class="anchor" id="whatIs"></a>
-      <div class="screen">
-        <div class="aboveTheFold columns">
-          <div class="column revealRight">
-            <h1>
-              מערכת
-              <span style="color: #6CB310">חכמה</span>
-              לניהול תורים
-            </h1>
-            <p>
-              Qint מספקת הקמת מערך לניהול תורים             
-              <b>ביעילות, ללא עלויות חומרה ותחזוקה</b>
-              תוך כדי
-              <b>פרסום</b>
-              ללקוחות,
-              <b>ניתוח נתונים</b>
-              ומניעת נטישת התורים.
+  </div>
+
+  <div class="body">
+    <a class="anchor" id="whatIs"></a>
+    <div class="above-the-fold">
+      <div class="above-the-fold-content">
+        <h1>
+          <b>הזמן</b> שלך - <b>האחריות</b> שלנו
+        </h1>
+        <p>
+          Qint מספקת הקמת מערך לניהול תורים
+          <b>ביעילות, ללא עלויות חומרה ותחזוקה</b>
+          תוך כדי
+          <b>פרסום</b>
+          ללקוחות,
+          <b>ניתוח נתונים</b>
+          ומניעת נטישת התורים.
+        </p>
+        <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginFreeQueues')">
+          <button class="new-btn">
+            להרשמה
+          </button>
+        </a>
+        <p class="new-subtitle">*ללא תשלום וללא פרטי אשראי</p>
+      </div>
+      <div class="graphic">
+        <img src="assets/phones.png" class="revealBottom" />
+      </div>
+    </div>
+
+    <a class="anchor" id="howItWorks"></a>
+    <div class="screen alt1">
+      <div>
+        <h1>איך זה עובד?</h1>
+        <div style="text-align: center">
+          <img src="assets/navigation.svg" style="width: 10em" />
+        </div>
+        <div class="steps">
+          <div class="step revealRight">
+            <p class="title">
+              לסרוק
             </p>
-            <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginFreeQueues')">
-              <button class="btn callToAction">
-                להרשמה
-              </button>
-            </a>
-            <p class="subtitle">*ללא תשלום וללא פרטי אשראי</p>
-          </div>
-          <div class="column revealLeft">
-            <img src="assets/queue.svg"/>
-          </div>
-        </div>
-      </div>
-
-      <a class="anchor" id="howItWorks"></a>
-      <div class="screen alt1">
-        <div>
-          <h1>איך זה עובד?</h1>
-          <div style="text-align: center">
-            <img src="assets/navigation.svg" style="width: 10em"/>
-          </div>
-          <div class="steps">
-            <div class="step revealRight">
-              <p class="title">
-                לסרוק
-              </p>
-              <div class="stepBody">
-                <div class="iconContainer">
-                  <i class="fas fa-qrcode"></i>
-                </div>
-                <p class="description">
-                  בעת ההגעה לתור הלקוח יסרוק קוד QR \ ישלח SMS למספר המופיע בשלט. 
-                </p>
+            <div class="stepBody">
+              <div class="iconContainer">
+                <i class="fas fa-qrcode"></i>
               </div>
+              <p class="description">
+                בעת ההגעה לתור הלקוח יסרוק קוד QR \ ישלח SMS למספר המופיע בשלט.
+              </p>
             </div>
-            <div class="step revealBottom">
-              <p class="title">
-                לקבל
-              </p>
-              <div class="stepBody">
-                <div class="iconContainer">
-                  <i class="fab fa-get-pocket"></i>
-                </div>
-                <p class="description">
-                  הלקוח יקבל מספר בתור ויראה את מצב התור, זמן המתנה מוערך, ויוכל להגדיר תזכורת כשתורו מתקרב.
-                </p>
+          </div>
+          <div class="step revealBottom">
+            <p class="title">
+              לקבל
+            </p>
+            <div class="stepBody">
+              <div class="iconContainer">
+                <i class="fab fa-get-pocket"></i>
               </div>
+              <p class="description">
+                הלקוח יקבל מספר בתור ויראה את מצב התור, זמן המתנה מוערך, ויוכל להגדיר תזכורת כשתורו מתקרב.
+              </p>
             </div>
-            <div class="step revealLeft">
-              <p class="title">
-                להמשיך
-              </p>
-              <div class="stepBody">
-                <div class="iconContainer">
-                  <i class="fas fa-thumbs-up"></i>
-                </div>
-                <p class="description">
-                  בזמן זה, הלקוח יתפנה להמשיך בענייניו, תוך כדי שמירה על מקומו בתור וצפייה במבצעים של בית העסק.
-                </p>
+          </div>
+          <div class="step revealLeft">
+            <p class="title">
+              להמשיך
+            </p>
+            <div class="stepBody">
+              <div class="iconContainer">
+                <i class="fas fa-thumbs-up"></i>
               </div>
+              <p class="description">
+                בזמן זה, הלקוח יתפנה להמשיך בענייניו, תוך כדי שמירה על מקומו בתור וצפייה במבצעים של בית העסק.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-
-      <a class="anchor" id="advantages"></a>
-      <div class="screen alt2">
-        <div>
-          <h1>היתרונות של Qint</h1>
-          <p class="subtitle">אפיון השירות והמוצר ע"י ניתוח והבנת צרכי הלקוחות שלנו ולקוחותיהם.</p>
-          <div class="cards">
-            <div class="card revealRight">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-ad"></i>
-                </div>
-                <p class="title">
-                  פרסום והגדלת מכירות
-                </p>
-              </div>
-              <p class="description">
-                פרסום מבצעים ותכנים ללקוחות על בסיס נתונים, תוך כדי המתנה לתור.<br/>
-                הלקוח ימשיך במסע הקניות שלו בבית העסק תוך כדי שמירה על תורו.<br/>                
-              </p>
-            </div>
-            <div class="card revealBottom">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-chart-pie"></i>
-                </div>
-                <p class="title">
-                  ניתוח נתונים, BI ו-AI
-                </p>
-              </div>
-              <p class="description">
-                 הסקת תובנות אודות זמן המתנה בתור, אחוז נטישה של התור, זמני עומס בארגון, תזמון כוח אדם נוסף, ניתוח וניתור אפקטיביות של פרסומות ללקוחות, ועוד..<br/>
-            </div>
-            <div class="card revealLeft">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-sitemap"></i>
-                </div>
-                <p class="title">
-                  התממשקות למערכות חיצוניות
-                </p>
-              </div>
-              <p class="description">
-                המערכת מספקת אפשרות לתפעל מערך ניהול תורים בצורה נוחה תוך כדי התממשקות לנקודות מכירה, תוכנות אירוח למסעדות ומערכות ERP וCRM ותשלום באמצעות הזנת פרטי המשלם במערכת.
-              </p>
-            </div>
-            <div class="card revealRight">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-hand-holding-usd"></i>
-                </div>
-                <p class="title">
-                  תמחור נוח לפי צריכה
-                </p>
-              </div>
-              <p class="description">
-                ניהול תורים ע"פ דרישה- יומי\ שבועי\ חודשי\שנתי.<br/>
-                מתאים לפסטיבלים,ימי ראיונות, הופעות, אודישנים, ימי בחירות ועוד..
-              </p>
-            </div>
-            <div class="card revealBottom">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-handshake"></i>
-                </div>
-                <p class="title">
-                  מניעת נטישה התור והנגשת מידע בזמן אמת
-                </p>
-              </div>
-              <p class="description">
-                תמנעו מלקוחות נטישה של התור והנגישו להם מידע בזמן אמת אודות זמני ההמתנה ואת האפשרות להמשיך בשגרת היום.<br/>
-                הלקוח ידע בכל שלב, בכל זמן ובכל מקום מה מצב התור.
-              </p>
-            </div>
-            <div class="card revealLeft">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-chart-line"></i>
-                </div>
-                <p class="title">
-                  חסכו בעלויות ובזמן
-                </p>
-              </div>
-              <p class="description">
-                ללא עלויות חומרה, טכנאים,מסכים וקיוסקים, השירות אותו אנו מספקים מתבצע בענן בלבד.<br/>
-                חסכו זמני המתנה ללקוחותיכם ע"י הזמנת תור מרחוק והתממשקות לתוכנות מפות להערכת זמני הגעה.
-              </p>
-            </div>
-          </div>
-  
-          <div class="content revealBottom" style="text-align: center; margin-top: 1em">
-            <p>ספק לארגון וללקוחות שלך את החדשנות הראויה להם</p>
-            <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginBottom')">
-              <button class="btn callToAction">החלו בתהליך</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <a class="anchor" id="contact"></a>
-      <div class="screen alt3">
-        <div class="columns">
-          <div class="column revealRight">
-            <h2>שמרו איתנו על קשר</h2>
-            <p class="subtitle">נשמח לספק לך את השירות הטוב ביותר ולקחת חלק בחדשנות הארגון שלך</p>
-            <div class="buttonsContainer">
-              <a href="tel:+972542118143" onclick="emitEvent('contactPhone')"><button class="btn callToAction">התקשרו אלינו</button></a>
-              <a href="mailto:Service@q-int.com" onclick="emitEvent('contactEmail')"><button class="btn callToAction">כתבו לנו באימייל</button></a>
-            </div>
-          </div>
-          <div class="column revealLeft">
-            <img src="assets/mailbox.svg"/>
-          </div>
-        </div>
-      </div>
-      </div>
-
-    <div class="footer">
-      <div class="content">
-        <p>
-          כל הזכויות שמורות
-          © 2021
-        </p>
-        <p>
-          <a href="http://www.freepik.com">גרפיקה של Freepik / macrovector</a> <a href="https://storyset.com/people">/ Freepik Storyset</a>
-        </p>
       </div>
     </div>
-    
-    <script src="index.js"></script>
-    
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/443afdc217.js"></script>
-    
-    <!--Start of Tawk.to Script-->
-    <script>
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/6029430e918aa261273ec4c0/1f1hs48s1';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
 
-    <!-- Hotjar Tracking Code for www.q-int.com -->
-    <script>
-      (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2493032,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-  </body>
+    <a class="anchor" id="advantages"></a>
+    <div class="screen alt2">
+      <div>
+        <h1>היתרונות של Qint</h1>
+        <p class="subtitle">אפיון השירות והמוצר ע"י ניתוח והבנת צרכי הלקוחות שלנו ולקוחותיהם.</p>
+        <div class="cards">
+          <div class="card revealRight">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-ad"></i>
+              </div>
+              <p class="title">
+                פרסום והגדלת מכירות
+              </p>
+            </div>
+            <p class="description">
+              פרסום מבצעים ותכנים ללקוחות על בסיס נתונים, תוך כדי המתנה לתור.<br />
+              הלקוח ימשיך במסע הקניות שלו בבית העסק תוך כדי שמירה על תורו.<br />
+            </p>
+          </div>
+          <div class="card revealBottom">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <p class="title">
+                ניתוח נתונים, BI ו-AI
+              </p>
+            </div>
+            <p class="description">
+              הסקת תובנות אודות זמן המתנה בתור, אחוז נטישה של התור, זמני עומס בארגון, תזמון כוח אדם נוסף, ניתוח וניתור
+              אפקטיביות של פרסומות ללקוחות, ועוד..<br />
+          </div>
+          <div class="card revealLeft">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <p class="title">
+                התממשקות למערכות חיצוניות
+              </p>
+            </div>
+            <p class="description">
+              המערכת מספקת אפשרות לתפעל מערך ניהול תורים בצורה נוחה תוך כדי התממשקות לנקודות מכירה, תוכנות אירוח למסעדות
+              ומערכות ERP וCRM ותשלום באמצעות הזנת פרטי המשלם במערכת.
+            </p>
+          </div>
+          <div class="card revealRight">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              <p class="title">
+                תמחור נוח לפי צריכה
+              </p>
+            </div>
+            <p class="description">
+              ניהול תורים ע"פ דרישה- יומי\ שבועי\ חודשי\שנתי.<br />
+              מתאים לפסטיבלים,ימי ראיונות, הופעות, אודישנים, ימי בחירות ועוד..
+            </p>
+          </div>
+          <div class="card revealBottom">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <p class="title">
+                מניעת נטישה התור והנגשת מידע בזמן אמת
+              </p>
+            </div>
+            <p class="description">
+              תמנעו מלקוחות נטישה של התור והנגישו להם מידע בזמן אמת אודות זמני ההמתנה ואת האפשרות להמשיך בשגרת
+              היום.<br />
+              הלקוח ידע בכל שלב, בכל זמן ובכל מקום מה מצב התור.
+            </p>
+          </div>
+          <div class="card revealLeft">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <p class="title">
+                חסכו בעלויות ובזמן
+              </p>
+            </div>
+            <p class="description">
+              ללא עלויות חומרה, טכנאים,מסכים וקיוסקים, השירות אותו אנו מספקים מתבצע בענן בלבד.<br />
+              חסכו זמני המתנה ללקוחותיכם ע"י הזמנת תור מרחוק והתממשקות לתוכנות מפות להערכת זמני הגעה.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-cta revealBottom">
+      <p>ספק לארגון וללקוחות שלך את החדשנות הראויה להם</p>
+      <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginBottom')">
+        <button class="new-btn">החלו בתהליך</button>
+      </a>
+    </div>
+
+    <a class="anchor" id="contact"></a>
+    <div class="screen alt3">
+      <div class="columns">
+        <div class="column revealRight">
+          <h2>שמרו איתנו על קשר</h2>
+          <p class="subtitle">נשמח לספק לך את השירות הטוב ביותר ולקחת חלק בחדשנות הארגון שלך</p>
+          <div class="buttonsContainer">
+            <a href="tel:+972542118143" onclick="emitEvent('contactPhone')"><button class="btn callToAction">התקשרו
+                אלינו</button></a>
+            <a href="mailto:Service@q-int.com" onclick="emitEvent('contactEmail')"><button class="btn callToAction">כתבו
+                לנו באימייל</button></a>
+          </div>
+        </div>
+        <div class="column revealLeft">
+          <img src="assets/mailbox.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="content">
+      <p>
+        כל הזכויות שמורות
+        © 2021
+      </p>
+      <p>
+        <a href="http://www.freepik.com">גרפיקה של Freepik / macrovector</a> <a href="https://storyset.com/people">/
+          Freepik Storyset</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/443afdc217.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <script>
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6029430e918aa261273ec4c0/1f1hs48s1';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+  <!-- Hotjar Tracking Code for www.q-int.com -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2493032, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</body>
+
 </html>

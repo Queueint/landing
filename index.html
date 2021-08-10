@@ -1,319 +1,351 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="google-site-verification" content="mdvcfvNUTjWdN9RMEXr2EHSmlt9J5azzv1pL7PedZUg" />
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
-    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
-    <title>Queueint</title>
-    
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="style-en.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BQQR6MVJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-P2BQQR6MVJ');
-    </script>
-    
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NQC8QTW');
-    </script>
-    <!-- End Google Tag Manager -->
+<head>
+  <meta name="google-site-verification" content="mdvcfvNUTjWdN9RMEXr2EHSmlt9J5azzv1pL7PedZUg" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+  <title>Queueint</title>
 
-    <!-- ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQC8QTW"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <div class="header">
-      <div class="content">
-        <img src="assets/logo.svg" class="logo"/>
-        
-        <div class="nav">
-          <button type="button" class="btn burger">
-            <i class="fas fa-bars"></i>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-en.css" />
+  <link rel="stylesheet" href="new-style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BQQR6MVJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-P2BQQR6MVJ');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NQC8QTW');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQC8QTW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="decorative-circle"></div>
+
+  <div class="header">
+    <div class="header-content">
+      <img src="assets/logo.svg" class="logo" />
+
+      <div class="nav">
+        <button type="button" class="new-btn burger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-content">
+          <button class="new-btn close">
+            <i class="fas fa-times"></i>
           </button>
-          <div class="navContent">
-            <a href="#whatIs">What is Qint?</a>
-            <a href="#howItWorks">How does it work?</a>
-            <a href="#advantages">Advantages of Qint</a>
-            <a href="#contact">Contact us</a>
-          </div>
-          <a href="hebrew.html">
-            עברית
-          </a>
-          <a class="loginLink" href="https://app.q-int.com/#/login" onclick="emitEvent('loginHeader')">
-            <button class="btn callToAction">
-              Login
+          <a href="#whatIs" class="nav-item">Home</a>
+          <a href="#howItWorks" class="nav-item">How it works</a>
+          <a href="#advantages" class="nav-item">Advantages</a>
+          <a href="#contact" class="nav-item">Contact us</a>
+          <a href="https://app.q-int.com/#/login" class="nav-item" onclick="emitEvent('loginHeader')">
+            <button class="new-btn">
+              Log in
             </button>
           </a>
+          <div class="select nav-item">
+            <button class="select-label">
+              <i class="fas fa-globe icon"></i>
+              ENG
+              <i class="fas fa-sort-down chevron"></i>
+            </button>
+            <div class="select-options">
+              <a href="index.html">
+                <div class="select-option">ENG</div>
+              </a>
+              <a href="hebrew.html">
+                <div class="select-option">עבר</div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
-    <div class="body">
-      <a class="anchor" id="whatIs"></a>
-      <div class="screen">
-        <div class="aboveTheFold columns">
-          <div class="column revealLeft">
-            <h1>
-              <span style="color: #6CB310">Intelligent</span>
-              queue management system
-            </h1>
-            <p>
-              Qint provides queue management system
-              <b>efficiency and without hardware and maintenance costs</b>
+  </div>
 
-              while
-              <b>advertising</b> to customers,
-              <b>analyzing data</b>
-              and preventing queue abandonment.
+  <div class="body">
+    <a class="anchor" id="whatIs"></a>
+    <div class="above-the-fold">
+      <div class="above-the-fold-content">
+        <h1>
+          Your <b>time -</b> Our <b>responsibility</b>
+        </h1>
+        <p>
+          Qint provides queue management system
+          <b>efficiency and without hardware and maintenance costs</b>
+
+          while
+          <b>advertising</b> to customers,
+          <b>analyzing data</b>
+          and preventing queue abandonment.
+        </p>
+        <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginFreeQueues')">
+          <button class="new-btn">
+            Register now
+          </button>
+        </a>
+        <p class="new-subtitle">*Free of charge, no credit card required</p>
+      </div>
+      <div class="graphic">
+        <img src="assets/phones.png" class="revealBottom" />
+      </div>
+    </div>
+
+    <a class="anchor" id="howItWorks"></a>
+    <div class="screen alt1">
+      <div>
+        <h1>How does it work?</h1>
+        <div style="text-align: center">
+          <img src="assets/navigation.svg" style="width: 10em" />
+        </div>
+        <div class="steps">
+          <div class="step revealLeft">
+            <p class="title">
+              Scan
             </p>
-            <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginFreeQueues')">
-              <button class="btn callToAction">
-                Register now
-              </button>
-            </a>
-            <p class="subtitle">*Free of charge, no credit card required</p>
-          </div>
-          <div class="column revealRight">
-            <img src="assets/queue.svg"/>
-          </div>
-        </div>
-      </div>
-
-      <a class="anchor" id="howItWorks"></a>
-      <div class="screen alt1">
-        <div>
-          <h1>How does it work?</h1>
-          <div style="text-align: center">
-            <img src="assets/navigation.svg" style="width: 10em"/>
-          </div>
-          <div class="steps">
-            <div class="step revealLeft">
-              <p class="title">
-                Scan
-              </p>
-              <div class="stepBody">
-                <div class="iconContainer">
-                  <i class="fas fa-qrcode"></i>
-                </div>
-                <p class="description">
-                  Upon arrival the customer will scan a QR code / send SMS to the phone number appearing on a sign.
-                </p>
-              </div>
-            </div>
-            <div class="step revealBottom">
-              <p class="title">
-                Receive
-              </p>
-              <div class="stepBody">
-                <div class="iconContainer">
-                  <i class="fab fa-get-pocket"></i>
-                </div>
-                <p class="description">
-                  The customer will receive a number in the queue and see the state of the queue,
-                  estimated waiting time, and will be able to set a reminder shortly before their turn.
-                </p>
-              </div>
-            </div>
-            <div class="step revealRight">
-              <p class="title">
-                Continue
-              </p>
-              <div class="stepBody">
-                <div class="iconContainer">
-                  <i class="fas fa-thumbs-up"></i>
-                </div>
-                <p class="description">
-                  Then the customer will be free to continue doing his business, while keeping track of his turn, and watching advertisments.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class ="wave">
-        <svg viewBox="0 0 180 20" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 0 10 C 40 0, 65 0, 90 10 S 160 20, 180 10 L 180 20 L 0 20 Z"/>
-        </svg>
-      </div>
-      
-      <a class="anchor" id="advantages"></a>
-      <div class="screen alt2">
-        <div>
-          <h1>Advantages of Qint</h1>
-          <p class="subtitle">Disruptive innovative queue management solution</p>
-          <div class="cards">
-            <div class="card revealLeft">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-ad"></i>
-                </div>
-                <p class="title">
-                  Marketing and increase in sales
-                </p>
+            <div class="stepBody">
+              <div class="iconContainer">
+                <i class="fas fa-qrcode"></i>
               </div>
               <p class="description">
-                Advertise to your customers based on data, sales and content while they're waiting in queue.<br/>
-                The customer will continue their journey in the business while their place in queue is preserved.<br/>                
-              </p>
-            </div>
-            <div class="card revealBottom">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-chart-pie"></i>
-                </div>
-                <p class="title">
-                  Data analysis, BI and AI
-                </p>
-              </div>
-              <p class="description">
-                Draw insights regarding waiting times, queue abandonment rates, peak hours, manpower scheduling, analysis and monitoring of relevant advertisements for your customers and more...<br/>                 
-              </p>
-            </div>
-            <div class="card revealRight">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-sitemap"></i>
-                </div>
-                <p class="title">
-                  Interfacing with external systems
-                </p>
-              </div>
-              <p class="description">
-                The system allows convenient queue management while interfacing to point of sale systems, restaurant hosting software, ERP and CRM systems, and billing
-              </p>
-            </div>
-            <div class="card revealLeft">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-hand-holding-usd"></i>
-                </div>
-                <p class="title">
-                  Comfortable usage-based pricing
-                </p>
-              </div>
-              <p class="description">
-                Queue management as needed - daily / weekly / monthly / yearly.
-                Suitable for festivals, interview days, shows, auditions, election days and more...
-              </p>
-            </div>
-            <div class="card revealBottom">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-handshake"></i>
-                </div>
-                <p class="title">
-                  Prevent queue abandonment and provide real time data
-                </p>
-              </div>
-              <p class="description">
-                Prevent your customers from abandoning the queue by serving them information about waiting times and the possibility of continuing their daily routine.<br/>
-                The customers will know at every point, all times and in all places the state of the queue.
-              </p>
-            </div>
-            <div class="card revealRight">
-              <div class="cardHeader">
-                <div class="iconContainer">
-                  <i class="fas fa-chart-line"></i>
-                </div>
-                <p class="title">
-                  Save time and money
-                </p>
-              </div>
-              <p class="description">
-                Without hardware costs, technicians, screens and kiosks, the service we offer is cloud-only.<br/>
-                Save waiting time for your customers by allowing them to enqueue remotely, and interface with GIS for estimating arrival times.
+                Upon arrival the customer will scan a QR code / send SMS to the phone number appearing on a sign.
               </p>
             </div>
           </div>
-
-          <div class="content revealBottom" style="text-align: center; margin-top: 1em">
-            <p>Provide your organization and customers the innovation they deserve</p>
-            <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginBottom')">
-              <button class="btn callToAction">Let&apos;s begin</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <a class="anchor" id="contact"></a>
-      <div class="screen alt3">
-        <div class="columns">
-          <div class="column revealLeft">
-            <h2>Keep in touch</h2>
-            <p class="subtitle">We will be happy to provide the best service and to take part in your organization's innovation</p>
-            <div class="buttonsContainer">
-              <a href="tel:+972542118143" onclick="emitEvent('contactPhone')"><button class="btn callToAction">Call us</button></a>
-              <a href="mailto:Service@q-int.com" onclick="emitEvent('contactEmail')"><button class="btn callToAction">E-Mail us</button></a>
+          <div class="step revealBottom">
+            <p class="title">
+              Receive
+            </p>
+            <div class="stepBody">
+              <div class="iconContainer">
+                <i class="fab fa-get-pocket"></i>
+              </div>
+              <p class="description">
+                The customer will receive a number in the queue and see the state of the queue,
+                estimated waiting time, and will be able to set a reminder shortly before their turn.
+              </p>
             </div>
           </div>
-          <div class="column revealRight">
-            <img src="assets/mailbox.svg"/>
+          <div class="step revealRight">
+            <p class="title">
+              Continue
+            </p>
+            <div class="stepBody">
+              <div class="iconContainer">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <p class="description">
+                Then the customer will be free to continue doing his business, while keeping track of his turn, and
+                watching advertisments.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="footer">
-      <div class="content">
-        <p>
-          All rights reserved
-          © 2021
-        </p>
-        <p>
-          <a href="http://www.freepik.com">Graphics by Freepik / macrovector</a> <a href="https://storyset.com/people">/ Freepik Storyset</a>
-        </p>
+    <div class ="wave">
+      <svg viewBox="0 0 180 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 10 C 40 0, 65 0, 90 10 S 160 20, 180 10 L 180 20 L 0 20 Z"/>
+      </svg>
+    </div>
+
+    <a class="anchor" id="advantages"></a>
+    <div class="screen alt2">
+      <div>
+        <h1>Advantages of Qint</h1>
+        <p class="subtitle">Disruptive innovative queue management solution</p>
+        <div class="cards">
+          <div class="card revealLeft">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-ad"></i>
+              </div>
+              <p class="title">
+                Marketing and increase in sales
+              </p>
+            </div>
+            <p class="description">
+              Advertise to your customers based on data, sales and content while they're waiting in queue.<br />
+              The customer will continue their journey in the business while their place in queue is preserved.<br />
+            </p>
+          </div>
+          <div class="card revealBottom">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <p class="title">
+                Data analysis, BI and AI
+              </p>
+            </div>
+            <p class="description">
+              Draw insights regarding waiting times, queue abandonment rates, peak hours, manpower scheduling, analysis
+              and monitoring of relevant advertisements for your customers and more...<br />
+            </p>
+          </div>
+          <div class="card revealRight">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <p class="title">
+                Interfacing with external systems
+              </p>
+            </div>
+            <p class="description">
+              The system allows convenient queue management while interfacing to point of sale systems, restaurant
+              hosting software, ERP and CRM systems, and billing
+            </p>
+          </div>
+          <div class="card revealLeft">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              <p class="title">
+                Comfortable usage-based pricing
+              </p>
+            </div>
+            <p class="description">
+              Queue management as needed - daily / weekly / monthly / yearly.
+              Suitable for festivals, interview days, shows, auditions, election days and more...
+            </p>
+          </div>
+          <div class="card revealBottom">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <p class="title">
+                Prevent queue abandonment and provide real time data
+              </p>
+            </div>
+            <p class="description">
+              Prevent your customers from abandoning the queue by serving them information about waiting times and the
+              possibility of continuing their daily routine.<br />
+              The customers will know at every point, all times and in all places the state of the queue.
+            </p>
+          </div>
+          <div class="card revealRight">
+            <div class="cardHeader">
+              <div class="iconContainer">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <p class="title">
+                Save time and money
+              </p>
+            </div>
+            <p class="description">
+              Without hardware costs, technicians, screens and kiosks, the service we offer is cloud-only.<br />
+              Save waiting time for your customers by allowing them to enqueue remotely, and interface with GIS for
+              estimating arrival times.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <script src="index.js"></script>
-    
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/443afdc217.js"></script>
-    
-    <!--Start of Tawk.to Script-->
-    <script>
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/6029430e918aa261273ec4c0/1eugirsru';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
 
-    <!-- Hotjar Tracking Code for www.q-int.com -->
-    <script>
-      (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2493032,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-  </body>
+    <div class="bottom-cta revealBottom">
+      <p>Provide your organization and customers the innovation they deserve</p>
+      <a href="https://app.q-int.com/#/register" onclick="emitEvent('loginBottom')">
+        <button class="new-btn">Let&apos;s begin</button>
+      </a>
+    </div>
+
+    <a class="anchor" id="contact"></a>
+    <div class="screen alt3">
+      <div class="columns">
+        <div class="column revealLeft">
+          <h2>Keep in touch</h2>
+          <p class="subtitle">We will be happy to provide the best service and to take part in your organization's
+            innovation</p>
+          <div class="buttonsContainer">
+            <a href="tel:+972542118143" onclick="emitEvent('contactPhone')"><button class="btn callToAction">Call
+                us</button></a>
+            <a href="mailto:Service@q-int.com" onclick="emitEvent('contactEmail')"><button
+                class="btn callToAction">E-Mail us</button></a>
+          </div>
+        </div>
+        <div class="column revealRight">
+          <img src="assets/mailbox.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="content">
+      <p>
+        All rights reserved
+        © 2021
+      </p>
+      <p>
+        <a href="http://www.freepik.com">Graphics by Freepik / macrovector</a> <a href="https://storyset.com/people">/
+          Freepik Storyset</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/443afdc217.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <script>
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6029430e918aa261273ec4c0/1eugirsru';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+  <!-- Hotjar Tracking Code for www.q-int.com -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2493032, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</body>
+
 </html>
