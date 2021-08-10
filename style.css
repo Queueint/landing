@@ -457,8 +457,8 @@ html[dir='rtl'] .covid .imageCovid {
   }
 
   html[dir='rtl'] .covid .imageCovid {
-    width: 5em;
-    height: 5em;
+    width: 4.0em;
+    height: 4.0em;
     right:initial;
     left: 0;
   }
