@@ -220,11 +220,13 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     color: #5bc6f9;
     font-weight: 200;
     text-align: start;
+    line-height: 1em;
+    margin-bottom: 0.75em;
 }
 
 .above-the-fold .new-btn {
     font-size: 1em;
-    margin-top: 2.625em;
+    margin-top: 3em;
     background-color: #5fcf90;
     transition: background-color 0.3s;
     box-shadow: 0 4px 7px rgba(95, 207, 144, 0.61);
