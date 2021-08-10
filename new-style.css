@@ -358,6 +358,81 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     color: #fff;
 }
 
+/* How it works */
+
+.method-screen {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-top: 6.25em;
+    padding-bottom: 5.5em;
+    max-width: 70em;
+    width: 100%;
+    margin: auto;
+}
+
+.method-screen h1 {
+    font-weight: 500;
+    font-size: 3.75em;
+    line-height: 1.4166em;
+    color: #000;
+    margin-bottom: 1em;
+}
+
+.method-screen h1 b {
+    color: #5bc6f9;
+}
+
+.method-screen .new-steps .step img {
+    height: 10.625em;
+    margin: 1.5em;
+}
+
+.new-steps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.new-steps .step {
+    text-align: center;
+    width: 33%;
+    margin: 0 3.125em;
+}
+
+.new-steps .step .title {
+    display: flex;
+    align-items: center;
+}
+
+.new-steps .step .title .icon {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.625em;
+    background-color: #5bc6f9;
+    color: #fff;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    line-height: 1.125em;
+}
+
+.new-steps .step .title .text {
+    color: #000;
+    font-weight: 500;
+    font-size: 2.25em;
+    padding-inline-start: 0.4444em;
+}
+
+.new-steps .step .description {
+    margin-top: 1em;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.375em;
+    text-align: start;
+}
+
 /* Advantages */
 
 .advantages-screen {
@@ -739,6 +814,65 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
         height: 100%;
     }
 
+    /* How it works */
+
+    .method-screen {
+        padding: 4em;
+        box-sizing: border-box;
+    }
+
+    .method-screen h1 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .new-steps {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    .new-steps .step {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+
+    .new-steps .step:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .method-screen .new-steps .step img {
+        height: 8.5em;
+    }
+    
+    .new-steps .step .title {
+        transform: translateX(-2.25em);
+        padding-inline-start: 0;
+    }
+
+    html[dir="rtl"] .new-steps .step .title {
+        transform: translateX(2.25em);
+    }
+
+    .new-steps .step .title .icon {
+        font-size: 1.25em;
+        padding: 0.125em;
+    }
+
+    .new-steps .step .title .text {
+        font-size: 1.5em;
+        padding-inline-start: 0.5em;
+    }
+
+    .new-steps .step .description {
+        font-size: 0.875em;
+    }
+    
     /* Advantages */
 
     .advantages-screen {
@@ -794,5 +928,11 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 
     .contact-screen .new-btn {
         margin-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .new-steps .step, .new-steps .step:nth-child(2n+1) {
+        flex-direction: column;
     }
 }
