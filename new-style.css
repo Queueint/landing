@@ -23,6 +23,9 @@
 .header .logo {
     height: 2.125em;
     z-index: 1;
+    background-color: #fff;
+    border-radius: 1em;
+    border-bottom-right-radius: 0;
 }
 
 .header .nav {
