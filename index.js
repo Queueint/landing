@@ -94,6 +94,23 @@ window.addEventListener('load', () => {
   handleViewportChange();
 });
 
+$(document).ready(() => {
+  const isRtl = document.dir === 'rtl';
+  const chevronNext = isRtl ? '<i class="fas fa-chevron-left"></i>' : '<i class="fas fa-chevron-right"></i>';
+  const chevronPrev = isRtl ? '<i class="fas fa-chevron-right"></i>' : '<i class="fas fa-chevron-left"></i>';
+  const makeButton = (icon, direction) => `<button type="button" class="slick-${direction}">${icon}</button>`;
+  $('.advantages-carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
+    rtl: isRtl,
+    nextArrow: makeButton(chevronNext, 'next'),
+    prevArrow: makeButton(chevronPrev, 'prev'),
+  });
+});
+
 function emitEvent(event) {
   switch (event) {
     case 'loginHeader': {
