@@ -43,8 +43,6 @@ input, textarea {
 /* Header */
 
 .header {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     background-color: transparent;
     transition: background-color 0.3s, box-shadow 0.3s;
     border-radius: 0 0 1em 1em;
@@ -249,8 +247,6 @@ html[dir="rtl"] .decorative-circle::before {
 }
 
 .above-the-fold {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     min-height: calc(100vh - 94px);
     display: flex;
     align-items: flex-end;
@@ -361,8 +357,6 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 /* How it works */
 
 .method-screen {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     padding-top: 6.25em;
     padding-bottom: 5.5em;
     max-width: 70em;
@@ -374,8 +368,8 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     font-weight: 500;
     font-size: 3.75em;
     line-height: 1.4166em;
-    color: #000;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 .method-screen h1 b {
@@ -419,7 +413,6 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 }
 
 .new-steps .step .title .text {
-    color: #000;
     font-weight: 500;
     font-size: 2.25em;
     padding-inline-start: 0.4444em;
@@ -428,7 +421,6 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 .new-steps .step .description {
     margin-top: 1em;
     font-weight: 300;
-    color: #000;
     line-height: 1.375em;
     text-align: start;
 }
@@ -436,8 +428,6 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 /* Advantages */
 
 .advantages-screen {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     background-color: #f3f3f3;
     padding-bottom: 9.125em;
 }
@@ -445,7 +435,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 .advantages-screen h1 {
     font-weight: 500;
     font-size: 3.5em;
-    color: #000;
+    text-align: center;
 }
 
 .advantages-screen h1 b {
@@ -470,14 +460,12 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     font-size: 2em;
     line-height: 1.5em;
     text-align: start;
-    color: #000;
 }
 
 .advantages-screen .description {
     font-size: 1.125em;
     line-height: 1.5em;
     text-align: start;
-    color: #000;
 }
 
 /* Advantages carousel */
@@ -582,8 +570,6 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 /* Bottom call to action */
 
 .bottom-cta {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     text-align: center;
     padding: 5em 0;
 }
@@ -618,8 +604,6 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 /* Contact form */
 
 .contact-screen {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     background-color: #53b9ff;
     color: #fff;
     background-image: url('assets/wthm-repeatable.png');
@@ -678,7 +662,6 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 }
 
 .contact-screen .new-btn {
-    font-family: 'Poppins', sans-serif;
     font-size: 1em;
     background-color: #ff8657;
     box-shadow: 0 4px 4px rgba(255, 134, 87, 0.25);
