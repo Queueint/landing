@@ -1,10 +1,48 @@
 /* Default style */
 
+.flex-row, .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.row * {
+    flex-grow: 1;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 1em;
+    background-color: #fff;
+    border: 0;
+    border-radius: 6px;
+    color: #484848;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.625em;
+    box-sizing: border-box;
+    margin-top: 1em;
+    min-width: 0;
+}
+
+.snake {
+    display: flex;
+    flex-direction: column;
+}
+
+.snake-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.snake-item:nth-child(odd) {
+    flex-direction: row;
+}
+
 /* Header */
 
 .header {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     background-color: transparent;
     transition: background-color 0.3s, box-shadow 0.3s;
     border-radius: 0 0 1em 1em;
@@ -209,8 +247,6 @@ html[dir="rtl"] .decorative-circle::before {
 }
 
 .above-the-fold {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     min-height: calc(100vh - 94px);
     display: flex;
     align-items: flex-end;
@@ -318,11 +354,222 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     color: #fff;
 }
 
+/* How it works */
+
+.method-screen {
+    padding-top: 6.25em;
+    padding-bottom: 5.5em;
+    max-width: 70em;
+    width: 100%;
+    margin: auto;
+}
+
+.method-screen h1 {
+    font-weight: 500;
+    font-size: 3.75em;
+    line-height: 1.4166em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.method-screen h1 b {
+    color: #5bc6f9;
+}
+
+.method-screen .new-steps .step img {
+    height: 10.625em;
+    margin: 1.5em;
+}
+
+.new-steps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.new-steps .step {
+    text-align: center;
+    width: 33%;
+    margin: 0 3.125em;
+}
+
+.new-steps .step .title {
+    display: flex;
+    align-items: center;
+}
+
+.new-steps .step .title .icon {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.625em;
+    background-color: #5bc6f9;
+    color: #fff;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    line-height: 1.125em;
+}
+
+.new-steps .step .title .text {
+    font-weight: 500;
+    font-size: 2.25em;
+    padding-inline-start: 0.4444em;
+}
+
+.new-steps .step .description {
+    margin-top: 1em;
+    font-weight: 300;
+    line-height: 1.375em;
+    text-align: start;
+}
+
+/* Advantages */
+
+.advantages-screen {
+    background-color: #f3f3f3;
+    padding-bottom: 9.125em;
+}
+
+.advantages-screen h1 {
+    font-weight: 500;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.advantages-screen h1 b {
+    color: #5bc6f9;
+}
+
+.advantages-screen .new-content {
+    max-width: 70em;
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+}
+
+.advantages-screen .snake-item img {
+    height: 17.5em;
+    margin: 2em;
+}
+
+.advantages-screen .title {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: start;
+}
+
+.advantages-screen .description {
+    font-size: 1.125em;
+    line-height: 1.5em;
+    text-align: start;
+}
+
+/* Advantages carousel */
+
+.advantages-screen .snake.slick-slider {
+    padding: 0 4em;
+    position: relative;
+}
+
+.advantages-screen .snake.slick-slider .snake-item {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.advantages-screen .snake.slick-slider .title {
+    font-size: 1em;
+    text-align: center;
+}
+
+.advantages-screen .snake.slick-slider .description {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.advantages-screen .snake img {
+    margin: 2em;
+    box-sizing: border-box;
+}
+
+.advantages-screen .snake .slick-next,
+.advantages-screen .snake .slick-prev {
+    border: 0;
+    font-size: 2em;
+    color: #c4c4c4;
+    background-color: transparent;
+    padding: 0.125em;
+    margin: 0 0.5em;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s;
+    position: absolute;
+    top: 25%;
+}
+
+.advantages-screen .snake .slick-next:hover, 
+.advantages-screen .snake .slick-prev:hover {
+    transform: scale(1.1);
+}
+
+.advantages-screen .snake .slick-next {
+    right: 0;
+}
+
+.advantages-screen .snake .slick-prev {
+    left: 0;
+}
+
+html[dir="rtl"] .advantages-screen .snake .slick-next {
+    right: initial;
+    left: 0;
+}
+
+html[dir="rtl"] .advantages-screen .snake .slick-prev {
+    left: initial;
+    right: 0;
+}
+
+.advantages-screen .snake .slick-list {
+    flex-grow: 1;
+}
+
+.slick-dots {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.slick-dots li {
+    list-style-type: none;
+    padding: 0 0.25rem;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    height: 0.5rem;
+    width: 0.5rem;
+    padding: 0 0.25em;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #717171;
+}
+
 /* Bottom call to action */
 
 .bottom-cta {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
     text-align: center;
     padding: 5em 0;
 }
@@ -354,9 +601,89 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     background-color: #59c186;
 }
 
+/* Contact form */
+
+.contact-screen {
+    background-color: #53b9ff;
+    color: #fff;
+    background-image: url('assets/wthm-repeatable.png');
+    background-repeat: repeat;
+    background-position: -10% 20%;
+    overflow: hidden;
+}
+
+.contact-content {
+    padding: 2.5em 0.75em;
+    max-width: 70em;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.contact-screen h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 5.75em;
+    padding: 0 6.25rem;
+    margin: 0;
+    line-height: 1em;
+    text-align: start;
+    z-index: 1; /* So that it's above the form::before blur */
+}
+
+.contact-screen .flex-row {
+    align-items: center;
+}
+
+.contact-screen .form-part {
+    position: relative;
+}
+
+.contact-screen .form-part::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 175%;
+    height: 150%;
+    transform: translate(-50%, -50%);
+    background-color: #53b9ff;
+    border-radius: 50%;
+    filter: blur(64px);
+}
+
+.contact-screen p {
+    font-size: 1.25em;
+    position: relative; /* So that it's above .form-part::before */
+}
+
+.contact-screen form {
+    position: relative; /* So that it's above .form-part::before */
+}
+
+.contact-screen .new-btn {
+    font-size: 1em;
+    background-color: #ff8657;
+    box-shadow: 0 4px 4px rgba(255, 134, 87, 0.25);
+    color: #fff;
+    border: 0;
+    border-radius: 0.3125em;
+    padding: 0.25em 3em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
 /* Mobile style */
 
 @media screen and (max-width: 1117px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    
+    .mobile-centered {
+        text-align: center;
+    }
+
     /* Header */
 
     .header .logo {
@@ -470,6 +797,76 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
         height: 100%;
     }
 
+    /* How it works */
+
+    .method-screen {
+        padding: 4em;
+        box-sizing: border-box;
+    }
+
+    .method-screen h1 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .new-steps {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    .new-steps .step {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+
+    .new-steps .step:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .method-screen .new-steps .step img {
+        height: 8.5em;
+    }
+    
+    .new-steps .step .title {
+        transform: translateX(-2.25em);
+        padding-inline-start: 0;
+    }
+
+    html[dir="rtl"] .new-steps .step .title {
+        transform: translateX(2.25em);
+    }
+
+    .new-steps .step .title .icon {
+        font-size: 1.25em;
+        padding: 0.125em;
+    }
+
+    .new-steps .step .title .text {
+        font-size: 1.5em;
+        padding-inline-start: 0.5em;
+    }
+
+    .new-steps .step .description {
+        font-size: 0.875em;
+    }
+    
+    /* Advantages */
+
+    .advantages-screen {
+        padding-top: 1em;
+        padding-bottom: 4.25em;
+    }
+
+    .advantages-screen h1 {
+        font-size: 2em;
+    }
+
     /* Scrolled mobile style */
 
     .header.scrolled {
@@ -499,5 +896,26 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     .header.scrolled .new-btn:hover {
         background-color: #fff;
         color: #5bc6f9;
+    }
+
+    /* Contact form */
+
+    .contact-screen h2 {
+        font-size: 3.75rem;
+        padding: 0;
+        max-width: 2.86em;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0.8em;
+    }
+
+    .contact-screen .new-btn {
+        margin-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .new-steps .step, .new-steps .step:nth-child(2n+1) {
+        flex-direction: column;
     }
 }

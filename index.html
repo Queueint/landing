@@ -10,12 +10,13 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style-en.css" />
   <link rel="stylesheet" href="new-style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BQQR6MVJ"></script>
@@ -141,156 +142,121 @@
     </div>  
 
     <a class="anchor" id="howItWorks"></a>
-    <div class="screen alt1">
-      <div>
-        <h1>How does it work?</h1>
-        <div style="text-align: center">
-          <img src="assets/navigation.svg" style="width: 10em" />
+    <div class="method-screen">
+      <h1>How does it <b>work?</b></h1>
+      <div class="new-steps">
+        <div class="step">
+          <img src="assets/scan.svg" />
+          <div>
+            <div class="title">
+              <div class="icon">1</div>
+              <div class="text">Scan</div>
+            </div>
+            <p class="description">
+              Upon arrival the customer will scan a QR code / send SMS to the phone number appearing on a sign.
+            </p>
+          </div>
         </div>
-        <div class="steps">
-          <div class="step revealLeft">
-            <p class="title">
-              Scan
-            </p>
-            <div class="stepBody">
-              <div class="iconContainer">
-                <i class="fas fa-qrcode"></i>
-              </div>
-              <p class="description">
-                Upon arrival the customer will scan a QR code / send SMS to the phone number appearing on a sign.
-              </p>
+        <div class="step">
+          <img src="assets/receive.svg" />
+          <div>
+            <div class="title">
+              <div class="icon">2</div>
+              <div class="text">Receive</div>
             </div>
+            <p class="description">
+              The customer will receive a number in the queue and see the state of the queue,
+              estimated waiting time, and will be able to set a reminder shortly before their turn.
+            </p>
           </div>
-          <div class="step revealBottom">
-            <p class="title">
-              Receive
-            </p>
-            <div class="stepBody">
-              <div class="iconContainer">
-                <i class="fab fa-get-pocket"></i>
-              </div>
-              <p class="description">
-                The customer will receive a number in the queue and see the state of the queue,
-                estimated waiting time, and will be able to set a reminder shortly before their turn.
-              </p>
+        </div>
+        <div class="step">
+          <img src="assets/person.svg" />
+          <div>
+            <div class="title">
+              <div class="icon">3</div>
+              <div class="text">Continue</div>
             </div>
-          </div>
-          <div class="step revealRight">
-            <p class="title">
-              Continue
+            <p class="description">
+              Then the customer will be free to continue doing his business, while keeping track of his turn, and
+              watching advertisments.
             </p>
-            <div class="stepBody">
-              <div class="iconContainer">
-                <i class="fas fa-thumbs-up"></i>
-              </div>
-              <p class="description">
-                Then the customer will be free to continue doing his business, while keeping track of his turn, and
-                watching advertisments.
-              </p>
-            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class ="wave">
+    <div class="wave">
       <svg viewBox="0 0 180 20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M 0 10 C 40 0, 65 0, 90 10 S 160 20, 180 10 L 180 20 L 0 20 Z"/>
+        <path d="M 0 10 C 40 0, 65 0, 90 10 S 160 20, 180 10 L 180 20 L 0 20 Z" />
       </svg>
     </div>
 
     <a class="anchor" id="advantages"></a>
-    <div class="screen alt2">
-      <div>
-        <h1>Advantages of Qint</h1>
-        <p class="subtitle">Disruptive innovative queue management solution</p>
-        <div class="cards">
-          <div class="card revealLeft">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-ad"></i>
-              </div>
-              <p class="title">
-                Marketing and increase in sales
-              </p>
-            </div>
+    <div class="advantages-screen">
+      <h1>Our <b>Advantages</b></h1>
+      <div class="snake new-content">
+        <div class="snake-item">
+          <div>
+            <p class="title">Marketing and increase in sales</p>
             <p class="description">
               Advertise to your customers based on data, sales and content while they're waiting in queue.<br />
-              The customer will continue their journey in the business while their place in queue is preserved.<br />
+              The customer will continue their journey in the business while their place in queue is preserved.
             </p>
           </div>
-          <div class="card revealBottom">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-chart-pie"></i>
-              </div>
-              <p class="title">
-                Data analysis, BI and AI
-              </p>
-            </div>
+          <img src="assets/target.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Data analysis, BI and AI</p>
             <p class="description">
               Draw insights regarding waiting times, queue abandonment rates, peak hours, manpower scheduling, analysis
-              and monitoring of relevant advertisements for your customers and more...<br />
+              and monitoring of relevant advertisements for your customers and more...
             </p>
           </div>
-          <div class="card revealRight">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-sitemap"></i>
-              </div>
-              <p class="title">
-                Interfacing with external systems
-              </p>
-            </div>
+          <img src="assets/charts.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Interfacing with external systems</p>
             <p class="description">
               The system allows convenient queue management while interfacing to point of sale systems, restaurant
               hosting software, ERP and CRM systems, and billing
             </p>
           </div>
-          <div class="card revealLeft">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-hand-holding-usd"></i>
-              </div>
-              <p class="title">
-                Comfortable usage-based pricing
-              </p>
-            </div>
-            <p class="description">
-              Queue management as needed - daily / weekly / monthly / yearly.
-              Suitable for festivals, interview days, shows, auditions, election days and more...
-            </p>
-          </div>
-          <div class="card revealBottom">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-handshake"></i>
-              </div>
-              <p class="title">
-                Prevent queue abandonment and provide real time data
-              </p>
-            </div>
+          <img src="assets/interfaces.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Prevent queue abandonment and provide real time data</p>
             <p class="description">
               Prevent your customers from abandoning the queue by serving them information about waiting times and the
               possibility of continuing their daily routine.<br />
               The customers will know at every point, all times and in all places the state of the queue.
             </p>
           </div>
-          <div class="card revealRight">
-            <div class="cardHeader">
-              <div class="iconContainer">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <p class="title">
-                Save time and money
-              </p>
-            </div>
+          <img src="assets/leaver.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Comfortable usage-based pricing</p>
+            <p class="description">
+              Queue management as needed - daily / weekly / monthly / yearly.
+              Suitable for festivals, interview days, shows, auditions, election days and more...
+            </p>
+          </div>
+          <img src="assets/pricing.svg" />
+        </div>
+        <div class="snake-item">
+          <div>
+            <p class="title">Save time and money</p>
             <p class="description">
               Without hardware costs, technicians, screens and kiosks, the service we offer is cloud-only.<br />
               Save waiting time for your customers by allowing them to enqueue remotely, and interface with GIS for
               estimating arrival times.
             </p>
           </div>
+          <img src="assets/timing.svg" />
         </div>
       </div>
     </div>
@@ -303,21 +269,26 @@
     </div>
 
     <a class="anchor" id="contact"></a>
-    <div class="screen alt3">
-      <div class="columns">
-        <div class="column revealLeft">
-          <h2>Keep in touch</h2>
-          <p class="subtitle">We will be happy to provide the best service and to take part in your organization's
-            innovation</p>
-          <div class="buttonsContainer">
-            <a href="tel:+972542118143" onclick="emitEvent('contactPhone')"><button class="btn callToAction">Call
-                us</button></a>
-            <a href="mailto:Service@q-int.com" onclick="emitEvent('contactEmail')"><button
-                class="btn callToAction">E-Mail us</button></a>
+    <div class="contact-screen">
+      <div class="contact-content">
+        <div class="flex-row">
+          <h2 class="revealLeft">Want to hear more?</h2>
+          <div class="form-part">
+            <p class="mobile-centered">We will be happy to provide the best service and to take part in your
+              organization's innovation</p>
+            <form id="contact-form">
+              <div class="row">
+                <input id="contact-form-first-name" type="text" placeholder="First Name"
+                  style="margin-right: 0.625em" />
+                <input id="contact-form-last-name" type="text" placeholder="Last Name" style="margin-left: 0.625em" />
+              </div>
+              <input id="contact-form-email" type="email" placeholder="Email Address" />
+              <textarea id="contact-form-message" rows="6" placeholder="Message (optional)"></textarea>
+              <div class="mobile-centered">
+                <button type="submit" class="new-btn">Submit</button>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="column revealRight">
-          <img src="assets/mailbox.svg" />
         </div>
       </div>
     </div>
@@ -335,6 +306,12 @@
       </p>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="index.js"></script>
 

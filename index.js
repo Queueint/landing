@@ -85,13 +85,72 @@ window.addEventListener('load', () => {
       }
     };
 
+    const handleCarousel = () => {
+      const isRtl = document.dir === 'rtl';
+      const chevronNext = isRtl ? '<i class="fas fa-chevron-left"></i>' : '<i class="fas fa-chevron-right"></i>';
+      const chevronPrev = isRtl ? '<i class="fas fa-chevron-right"></i>' : '<i class="fas fa-chevron-left"></i>';
+      const makeButton = (icon, direction) => `<button type="button" class="slick-${direction}">${icon}</button>`;
+      const element = $('.advantages-screen .snake');
+      const isSlicked = element[0].classList.contains('slick-initialized');
+      if (isMobile) {
+        if (!isSlicked) {
+          element.slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+            pauseOnFocus: true,
+            pauseOnDotsHover: true,
+            rtl: isRtl,
+            nextArrow: makeButton(chevronNext, 'next'),
+            prevArrow: makeButton(chevronPrev, 'prev'),
+          });
+        }
+      } else {
+        if (isSlicked) {
+          element.slick('unslick');
+        }
+      }
+    };
+
     handleHeader();
     handleBody();
     handleLinks();
+    handleCarousel();
   };
   document.addEventListener('scroll', handleViewportChange);
   window.addEventListener('resize', handleViewportChange);
   handleViewportChange();
+
+  const contactForm = document.getElementById('contact-form');
+  contactForm.addEventListener('submit', e => {
+    const formTargetUrl = 'https://api.q-int.com/contact';
+
+    const getValues = () => {
+      const firstNameElement = document.getElementById('contact-form-first-name');
+      const lastNameElement = document.getElementById('contact-form-last-name');
+      const emailElement = document.getElementById('contact-form-email');
+      const messageElement = document.getElementById('contact-form-message');
+      return {
+        firstName: firstNameElement.value,
+        lastName: lastNameElement.value,
+        emailAddress: emailElement.value,
+        message: messageElement.value,
+      };
+    };
+
+    e.preventDefault();
+
+    const { firstName, lastName, emailAddress, message } = getValues();
+    const request = new Request(formTargetUrl, {
+      method: 'POST',
+      body: JSON.stringify({ firstName, lastName, emailAddress, message }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+    fetch(request)
+      .then(() => {
+        contactForm.reset();
+      });
+  });
 });
 
 function emitEvent(event) {
@@ -106,14 +165,6 @@ function emitEvent(event) {
     }
     case 'loginBottom': {
       gtag('event', 'sign_up', { event_category: 'engagement', value: 'bottom' });
-      break;
-    }
-    case 'contactPhone': {
-      gtag('event', 'contact', { event_category: 'engagement', value: 'phone' });
-      break;
-    }
-    case 'contactEmail': {
-      gtag('event', 'contact', { event_category: 'engagement', value: 'email' });
       break;
     }
   }
