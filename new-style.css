@@ -448,6 +448,11 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
         z-index: 1;
     }
 
+    html[dir="rtl"] .above-the-fold .above-the-fold-content {
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+
     .above-the-fold h1 {
         font-size: 1.875em;
         text-align: center;
