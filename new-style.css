@@ -762,13 +762,9 @@ html[dir="rtl"] .footer .navs {
   }
   
 html[dir='rtl'] .covid .imageCovid {
-    width: 9.25em;
-    height: 9.25em;
     right:initial;
     left: 0;
-    bottom: 0;
-    align-items: flex-end;
-    transform: scale(-1,1);
+    transform: scaleX(-1);
 }
 
 /* Mobile style */
@@ -956,52 +952,38 @@ html[dir='rtl'] .covid .imageCovid {
 
     /*Covid*/
 
-    .covid .covid-content .covid-container {
-        display: flex;
-      }
     
-      .covid .covid-content .covid-container p {
-        color:#fff;
-        text-align: start;
+    
+    .covid .covid-content .covid-container p {
         padding-left: 0.75em;
         padding-right: 0.75em;
-      }
+    }
     
-      .covid .covid-content h1 {
-        color:#fff;
+    .covid .covid-content h1 {
         text-align: center ;
         padding-inline-start: 0.25em;
         padding-inline-end: 0.75em;
-      }
+    }
     
-      html[dir="rtl"] .covid .covid-content h1 {
-        color:#fff;
-        right:initial;
+    html[dir="rtl"] .covid .covid-content h1 {
         padding-inline-start: 0.75em;
         padding-inline-end: 0.75em;
-      }
+    }
     
-      html[dir="rtl"] .covid .covid-content .covid-container p {
-        color:#fff;
+    html[dir="rtl"] .covid .covid-content .covid-container p {
         text-align: start;
-        padding-inline-start: 0.75em;
-        padding-inline-end: 0.75em;
-      }
+    }
     
-      .covid .imageCovid {
+    .covid .imageCovid {
         width: 5em;
         height: 5em;
-        position: absolute;
-        right: 0;
         align-items:flex-end;
-      }
+    }
     
-      html[dir='rtl'] .covid .imageCovid {
-        width: 5em;
-        height: 5em;
+    html[dir='rtl'] .covid .imageCovid {
         right:initial;
         left: 0;
-      }
+    }
     
     /* Advantages */
 
