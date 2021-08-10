@@ -385,6 +385,10 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     font-size: 16px;
     background-color: #53b9ff;
     color: #fff;
+    background-image: url('assets/wthm-repeatable.png');
+    background-repeat: repeat;
+    background-position: -10% 20%;
+    overflow: hidden;
 }
 
 .contact-content {
@@ -408,8 +412,31 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     align-items: center;
 }
 
+.contact-screen .form-part {
+    position: relative;
+}
+
+.contact-screen .form-part::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 175%;
+    height: 150%;
+    transform: translate(-50%, -50%);
+    background-color: #53b9ff;
+    border-radius: 50%;
+    filter: blur(64px);
+}
+
 .contact-screen p {
     font-size: 1.25em;
+    position: relative; /* So that it's above .form-part::before */
+}
+
+.contact-screen form {
+    position: relative; /* So that it's above .form-part::before */
 }
 
 .contact-screen .new-btn {
