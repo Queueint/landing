@@ -85,30 +85,41 @@ window.addEventListener('load', () => {
       }
     };
 
+    const handleCarousel = () => {
+      const isRtl = document.dir === 'rtl';
+      const chevronNext = isRtl ? '<i class="fas fa-chevron-left"></i>' : '<i class="fas fa-chevron-right"></i>';
+      const chevronPrev = isRtl ? '<i class="fas fa-chevron-right"></i>' : '<i class="fas fa-chevron-left"></i>';
+      const makeButton = (icon, direction) => `<button type="button" class="slick-${direction}">${icon}</button>`;
+      const element = $('.advantages-screen .snake');
+      const isSlicked = element[0].classList.contains('slick-initialized');
+      if (isMobile) {
+        if (!isSlicked) {
+          element.slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+            pauseOnFocus: true,
+            pauseOnDotsHover: true,
+            rtl: isRtl,
+            nextArrow: makeButton(chevronNext, 'next'),
+            prevArrow: makeButton(chevronPrev, 'prev'),
+          });
+        }
+      } else {
+        if (isSlicked) {
+          element.slick('unslick');
+        }
+      }
+    };
+
     handleHeader();
     handleBody();
     handleLinks();
+    handleCarousel();
   };
   document.addEventListener('scroll', handleViewportChange);
   window.addEventListener('resize', handleViewportChange);
   handleViewportChange();
-});
-
-$(document).ready(() => {
-  const isRtl = document.dir === 'rtl';
-  const chevronNext = isRtl ? '<i class="fas fa-chevron-left"></i>' : '<i class="fas fa-chevron-right"></i>';
-  const chevronPrev = isRtl ? '<i class="fas fa-chevron-right"></i>' : '<i class="fas fa-chevron-left"></i>';
-  const makeButton = (icon, direction) => `<button type="button" class="slick-${direction}">${icon}</button>`;
-  $('.advantages-carousel').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    dots: true,
-    pauseOnFocus: true,
-    pauseOnDotsHover: true,
-    rtl: isRtl,
-    nextArrow: makeButton(chevronNext, 'next'),
-    prevArrow: makeButton(chevronPrev, 'prev'),
-  });
 });
 
 function emitEvent(event) {

@@ -79,11 +79,6 @@ hr {
   background-image: linear-gradient(#e0fcff, #e0fffa);
 }
 
-.screen.alt2 {
-  background-color: #e0fffa;
-  background-image: linear-gradient(#e0fffa, #e0fff2);
-}
-
 .screen.alt3 {
   background-color: #e0fff2;
   background-image: linear-gradient(#e0fff2, #e0ffeb);
@@ -216,69 +211,6 @@ hr {
   }
 }
 
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1280px;
-  margin: auto;
-  margin-top: 0.5em;
-  padding: 0 0.5em;
-}
-
-.cards .card {
-  flex-grow: 1;
-  max-width: 33%;
-  padding: 0.5em;
-  box-sizing: border-box;
-}
-
-.cards .card .iconContainer i {
-  font-size: 1.5em;
-  height: 1em;
-  padding: 0.5em;
-  background-color: #badaea;
-  color: #426373;
-  border-radius: 50%;
-}
-
-.cards .card .cardHeader {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 0.5em;
-}
-
-.cards .card .title {
-  font-weight: bold;
-  text-align: right;
-  text-align: start;
-  margin: 0 0.75em;
-}
-
-.cards .card .description {
-  font-size: 0.8em;
-  text-align: right;
-  text-align: start;
-  margin: 0;
-}
-
-@media screen and (max-width: 1000px) {
-  .cards .card {
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .cards {
-    flex-direction: column;
-  }
-
-  .cards .card {
-    max-width: 100%;
-  }
-}
-
 .btn {
   border: none;
   border-radius: 1em/50%;
@@ -348,8 +280,9 @@ hr {
 }
 
 .wave {
-  fill:#E5E5E5;
+  fill:#f3f3f3;
   background-color: #fff;
   display: flex;
   align-items: flex-end;
+  transform: translateY(1px);
 }

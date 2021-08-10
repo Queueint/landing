@@ -1,5 +1,21 @@
 /* Default style */
 
+.snake {
+    display: flex;
+    flex-direction: column;
+}
+
+.snake-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.snake-item:nth-child(odd) {
+    flex-direction: row;
+}
+
 /* Header */
 
 .header {
@@ -318,35 +334,82 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     color: #fff;
 }
 
-/* Advantages carousel */
+/* Advantages */
 
-.advantages-carousel.slick-slider {
+.advantages-screen {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    background-color: #f3f3f3;
+    padding-bottom: 9.125em;
+}
+
+.advantages-screen h1 {
+    font-weight: 500;
+    font-size: 3.5em;
+    color: #000;
+}
+
+.advantages-screen h1 b {
+    color: #5bc6f9;
+}
+
+.advantages-screen .new-content {
+    max-width: 70em;
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+}
+
+.advantages-screen .snake-item img {
+    height: 17.5em;
+    margin: 2em;
+}
+
+.advantages-screen .title {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: start;
+    color: #000;
+}
+
+.advantages-screen .description {
+    font-size: 1.125em;
+    line-height: 1.5em;
+    text-align: start;
+    color: #000;
+}
+
+/* Advantages carousel */
+
+.advantages-screen .snake.slick-slider {
     padding: 0 4em;
     position: relative;
 }
 
-.advantages-carousel img {
-    width: 100%;
+.advantages-screen .snake.slick-slider .snake-item {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.advantages-screen .snake.slick-slider .title {
+    font-size: 1em;
+    text-align: center;
+}
+
+.advantages-screen .snake.slick-slider .description {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.advantages-screen .snake img {
     margin: 2em;
     box-sizing: border-box;
 }
 
-.advantages-carousel .title {
-    font-weight: 600;
-    margin-bottom: 1.125em;
-    text-align: center;
-}
-
-.advantages-carousel .body {
-    font-size: 0.75em;
-    line-height: 1.66em;
-    text-align: center;
-}
-
-.advantages-carousel .slick-next,
-.advantages-carousel .slick-prev {
+.advantages-screen .snake .slick-next,
+.advantages-screen .snake .slick-prev {
     border: 0;
     font-size: 2em;
     color: #c4c4c4;
@@ -360,30 +423,30 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     top: 25%;
 }
 
-.advantages-carousel .slick-next:hover, 
-.advantages-carousel .slick-prev:hover {
+.advantages-screen .snake .slick-next:hover, 
+.advantages-screen .snake .slick-prev:hover {
     transform: scale(1.1);
 }
 
-.advantages-carousel .slick-next {
+.advantages-screen .snake .slick-next {
     right: 0;
 }
 
-.advantages-carousel .slick-prev {
+.advantages-screen .snake .slick-prev {
     left: 0;
 }
 
-html[dir="rtl"] .advantages-carousel .slick-next {
+html[dir="rtl"] .advantages-screen .snake .slick-next {
     right: initial;
     left: 0;
 }
 
-html[dir="rtl"] .advantages-carousel .slick-prev {
+html[dir="rtl"] .advantages-screen .snake .slick-prev {
     left: initial;
     right: 0;
 }
 
-.advantages-carousel .slick-list {
+.advantages-screen .snake .slick-list {
     flex-grow: 1;
 }
 
@@ -567,6 +630,17 @@ html[dir="rtl"] .advantages-carousel .slick-prev {
     .above-the-fold .graphic img {
         width: initial;
         height: 100%;
+    }
+
+    /* Advantages */
+
+    .advantages-screen {
+        padding-top: 1em;
+        padding-bottom: 4.25em;
+    }
+
+    .advantages-screen h1 {
+        font-size: 2em;
     }
 
     /* Scrolled mobile style */
