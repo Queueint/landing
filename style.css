@@ -408,6 +408,7 @@ html[dir='rtl'] .covid .imageCovid {
   .cards .card {
     max-width: 50%;
   }
+  
 
   .covid .covid-content .covid-container p {
     color:#fff;
@@ -426,6 +427,8 @@ html[dir='rtl'] .covid .imageCovid {
   html[dir="rtl"] .covid .covid-content h1 {
     color:#fff;
     right:initial;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
   }
 
   html[dir="rtl"] .covid .covid-content .covid-container p {
