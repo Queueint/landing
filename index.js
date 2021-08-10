@@ -92,6 +92,37 @@ window.addEventListener('load', () => {
   document.addEventListener('scroll', handleViewportChange);
   window.addEventListener('resize', handleViewportChange);
   handleViewportChange();
+
+  const contactForm = document.getElementById('contact-form');
+  contactForm.addEventListener('submit', e => {
+    const formTargetUrl = 'https://api.q-int.com/contact';
+
+    const getValues = () => {
+      const firstNameElement = document.getElementById('contact-form-first-name');
+      const lastNameElement = document.getElementById('contact-form-last-name');
+      const emailElement = document.getElementById('contact-form-email');
+      const messageElement = document.getElementById('contact-form-message');
+      return {
+        firstName: firstNameElement.value,
+        lastName: lastNameElement.value,
+        emailAddress: emailElement.value,
+        message: messageElement.value,
+      };
+    };
+
+    e.preventDefault();
+
+    const { firstName, lastName, emailAddress, message } = getValues();
+    const request = new Request(formTargetUrl, {
+      method: 'POST',
+      body: JSON.stringify({ firstName, lastName, emailAddress, message }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+    fetch(request)
+      .then(() => {
+        contactForm.reset();
+      });
+  });
 });
 
 function emitEvent(event) {
