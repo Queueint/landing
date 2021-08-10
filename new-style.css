@@ -568,6 +568,7 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
     margin: 0;
     line-height: 1em;
     text-align: start;
+    z-index: 1; /* So that it's above the form::before blur */
 }
 
 .contact-screen .flex-row {
