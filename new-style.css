@@ -31,10 +31,6 @@
     height: 2.125em;
 }
 
-.header .nav.active {
-    position: initial; /* So that on mobile it's full screen */
-}
-
 .header .nav .nav-content {
     height: 100%;
     display: flex;
@@ -350,6 +346,10 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 
     .header .nav .nav-content .new-btn.close {
         display: block;
+    }
+    
+    .header .nav.active {
+        position: initial; /* So that on mobile it's full screen */
     }
     
     .header .nav.active .nav-content {
