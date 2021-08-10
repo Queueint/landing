@@ -33,11 +33,6 @@ p {
   margin: 0;
 }
 
-hr {
-  margin: 1.5em 1em;
-  border: 1px solid #c1e4f5;
-}
-
 .body.scrolled {
   margin-top: 74px;
 }
@@ -77,11 +72,6 @@ hr {
 .screen.alt1 {
   background-color: #e0fcff;
   background-image: linear-gradient(#e0fcff, #e0fffa);
-}
-
-.screen.alt3 {
-  background-color: #e0fff2;
-  background-image: linear-gradient(#e0fff2, #e0ffeb);
 }
 
 .columns {

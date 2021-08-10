@@ -1,5 +1,29 @@
 /* Default style */
 
+.flex-row, .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.row * {
+    flex-grow: 1;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 1em;
+    background-color: #fff;
+    border: 0;
+    border-radius: 6px;
+    color: #484848;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.625em;
+    box-sizing: border-box;
+    margin-top: 1em;
+    min-width: 0;
+}
+
 .snake {
     display: flex;
     flex-direction: column;
@@ -516,9 +540,92 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
     background-color: #59c186;
 }
 
+/* Contact form */
+
+.contact-screen {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #53b9ff;
+    color: #fff;
+    background-image: url('assets/wthm-repeatable.png');
+    background-repeat: repeat;
+    background-position: -10% 20%;
+    overflow: hidden;
+}
+
+.contact-content {
+    padding: 2.5em 0.75em;
+    max-width: 70em;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.contact-screen h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 5.75em;
+    padding: 0 6.25rem;
+    margin: 0;
+    line-height: 1em;
+    text-align: start;
+    z-index: 1; /* So that it's above the form::before blur */
+}
+
+.contact-screen .flex-row {
+    align-items: center;
+}
+
+.contact-screen .form-part {
+    position: relative;
+}
+
+.contact-screen .form-part::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 175%;
+    height: 150%;
+    transform: translate(-50%, -50%);
+    background-color: #53b9ff;
+    border-radius: 50%;
+    filter: blur(64px);
+}
+
+.contact-screen p {
+    font-size: 1.25em;
+    position: relative; /* So that it's above .form-part::before */
+}
+
+.contact-screen form {
+    position: relative; /* So that it's above .form-part::before */
+}
+
+.contact-screen .new-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    background-color: #ff8657;
+    box-shadow: 0 4px 4px rgba(255, 134, 87, 0.25);
+    color: #fff;
+    border: 0;
+    border-radius: 0.3125em;
+    padding: 0.25em 3em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
 /* Mobile style */
 
 @media screen and (max-width: 1117px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    
+    .mobile-centered {
+        text-align: center;
+    }
+
     /* Header */
 
     .header .logo {
@@ -672,5 +779,20 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
     .header.scrolled .new-btn:hover {
         background-color: #fff;
         color: #5bc6f9;
+    }
+
+    /* Contact form */
+
+    .contact-screen h2 {
+        font-size: 3.75rem;
+        padding: 0;
+        max-width: 2.86em;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0.8em;
+    }
+
+    .contact-screen .new-btn {
+        margin-top: 1.5em;
     }
 }
