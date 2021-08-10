@@ -33,11 +33,6 @@ p {
   margin: 0;
 }
 
-hr {
-  margin: 1.5em 1em;
-  border: 1px solid #c1e4f5;
-}
-
 .body.scrolled {
   margin-top: 74px;
 }
@@ -82,11 +77,6 @@ hr {
 .screen.alt2 {
   background-color: #e0fffa;
   background-image: linear-gradient(#e0fffa, #e0fff2);
-}
-
-.screen.alt3 {
-  background-color: #e0fff2;
-  background-image: linear-gradient(#e0fff2, #e0ffeb);
 }
 
 .columns {
@@ -277,57 +267,6 @@ hr {
   .cards .card {
     max-width: 100%;
   }
-}
-
-.btn {
-  border: none;
-  border-radius: 1em/50%;
-  font-size: 1em;
-  padding: 0.5em 0.7em;
-  margin: 0.5em;
-  margin-top: 1em;
-  background-color: #fff;
-  transform: scale(1.0);
-  transition: background-color 0.1s linear, transform 0.3s;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #F8F8F8;
-  transform: scale(1.05);
-}
-
-.btn:active {
-  transform: scale(0.95);
-}
-
-.btn.callToAction {
-  background-color: #144B76;
-  color: #E0F3FF;
-  font-weight: bold;
-}
-
-.btn.callToAction:hover {
-  background-color: #1167A8;
-}
-
-.buttonsContainer {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 1em;
-}
-
-.buttonsContainer a {
-  display: block;
-  margin: 0 0.125em;
-}
-
-.buttonsContainer a .btn {
-  width: 100%;
-  padding: 0.5em 1em;
-  margin: 0;
 }
 
 .footer {

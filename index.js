@@ -108,13 +108,5 @@ function emitEvent(event) {
       gtag('event', 'sign_up', { event_category: 'engagement', value: 'bottom' });
       break;
     }
-    case 'contactPhone': {
-      gtag('event', 'contact', { event_category: 'engagement', value: 'phone' });
-      break;
-    }
-    case 'contactEmail': {
-      gtag('event', 'contact', { event_category: 'engagement', value: 'email' });
-      break;
-    }
   }
 }
