@@ -42,7 +42,7 @@
     display: none;
     font-size: 32px;
     position: absolute;
-    top: 2.125em;
+    top: 0.875em;
     right: 0.875em;
     transition: top 0.3s;
     border: 0;
@@ -367,6 +367,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     .header .header-content {
         padding-left: 1.75em;
         padding-right: 1.75em;
+        padding-top: 1.75em;
     }
 
     .header .nav .nav-content {
@@ -425,6 +426,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 
     .above-the-fold {
         justify-content: center;
+        min-height: calc(100vh - 62px);
     }
 
     .above-the-fold .above-the-fold-content {

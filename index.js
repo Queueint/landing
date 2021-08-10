@@ -35,8 +35,12 @@ window.addEventListener('load', () => {
     });
   });
 
-  const handleScrollY = () => {
-    const requiredScrollY = 40;
+  const handleViewportChange = () => {
+    const desktopHeaderY = 40;
+    const mobileHeaderY = 10;
+    const mobileWidth = 1117;
+    const isMobile = window.innerWidth <= mobileWidth;
+    const requiredScrollY = isMobile ? mobileHeaderY : desktopHeaderY;
 
     const handleHeader = () => {
       const header = document.getElementsByClassName('header')[0];
@@ -85,8 +89,9 @@ window.addEventListener('load', () => {
     handleBody();
     handleLinks();
   };
-  document.addEventListener('scroll', handleScrollY);
-  handleScrollY();
+  document.addEventListener('scroll', handleViewportChange);
+  window.addEventListener('resize', handleViewportChange);
+  handleViewportChange();
 });
 
 function emitEvent(event) {
