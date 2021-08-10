@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
   const handleScrollY = () => {
     const header = document.getElementsByClassName('header')[0];
     const body = document.getElementsByClassName('body')[0];
-    if (window.scrollY > 48) {
+    if (window.scrollY > 40) {
       header.classList.add('scrolled');
       body.classList.add('scrolled');
     } else {

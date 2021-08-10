@@ -14,19 +14,21 @@
 .header .header-content {
     padding-left: 4.625em;
     padding-right: 4.625em;
-    padding-top: 3em;
+    padding-top: 3.75em;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .header .logo {
-    height: 4.8125em;
+    height: 2.125em;
     z-index: 1;
 }
 
 .header .nav {
     flex-grow: 1;
     position: relative;
+    height: 2.125em;
 }
 
 .header .nav.active {
@@ -159,7 +161,7 @@ html[dir="rtl"] .header .nav .nav-content .new-btn.close {
 .header .burger {
     display: none;
     position: absolute;
-    bottom: 25%;
+    bottom: 0;
     right: 0;
     font-size: 2em;
     border: 0;
@@ -210,10 +212,14 @@ html[dir="rtl"] .decorative-circle::before {
 .above-the-fold {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    min-height: calc(100vh - 116px);
+    min-height: calc(100vh - 94px);
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+.body.scrolled .above-the-fold {
+    min-height: calc(100vh - 74px);
 }
 
 .above-the-fold .above-the-fold-content {
@@ -284,6 +290,8 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     top: 0;
     left: 0;
     width: 100%;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(4px);
@@ -321,7 +329,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     }
 
     .header .logo {
-        height: 3.875em;
+        height: 1.75em;
     }
 
     .header .burger {
