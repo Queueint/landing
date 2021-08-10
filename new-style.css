@@ -324,10 +324,6 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 @media screen and (max-width: 1117px) {
     /* Header */
 
-    .header.scrolled {
-        border-radius: 0 0 0.5em 0.5em;
-    }
-
     .header .logo {
         height: 1.75em;
     }
@@ -424,6 +420,10 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
     }
 
     /* Scrolled mobile style */
+
+    .header.scrolled {
+        border-radius: 0 0 0.5em 0.5em;
+    }
 
     .header.scrolled .nav .nav-content .new-btn.close {
         top: 0.75em;
