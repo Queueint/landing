@@ -20,7 +20,7 @@
 }
 
 .header .logo {
-    height: 4.25em;
+    height: 4.8125em;
     z-index: 1;
 }
 
@@ -301,6 +301,9 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
         border-radius: 0 0 0.5em 0.5em;
     }
 
+    .header .logo {
+        height: 3.875em;
+    }
 
     .header .burger {
         display: block;
