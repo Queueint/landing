@@ -726,6 +726,51 @@ html[dir="rtl"] .footer .navs {
     text-decoration: underline;
 }
 
+/*Covid*/
+.covid {
+    background-color:#5BC6F9;
+    position: relative;
+  }
+  
+.covid h1 {
+    color:#fff;
+    text-align: start;
+    padding-top: 2em;
+    padding-inline-start: 6.25em;
+    padding-inline-end: 14.5em;
+}
+
+.covid .covid-content .covid-container {
+    display: flex;
+    height: 9.5em;
+  }
+   
+.covid .covid-content .covid-container p {
+    color:#fff;
+    padding-inline-start: 12.5em;
+    padding-inline-end: 14.5em;
+    padding-top: 1em;
+  }
+  
+.covid .imageCovid {
+    width: 9.25em;
+    height: 9.25em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    align-items: flex-end;
+  }
+  
+html[dir='rtl'] .covid .imageCovid {
+    width: 9.25em;
+    height: 9.25em;
+    right:initial;
+    left: 0;
+    bottom: 0;
+    align-items: flex-end;
+    transform: scale(-1,1);
+}
+
 /* Mobile style */
 
 @media screen and (max-width: 1117px) {
@@ -908,6 +953,55 @@ html[dir="rtl"] .footer .navs {
     .new-steps .step .description {
         font-size: 0.875em;
     }
+
+    /*Covid*/
+
+    .covid .covid-content .covid-container {
+        display: flex;
+      }
+    
+      .covid .covid-content .covid-container p {
+        color:#fff;
+        text-align: start;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+      }
+    
+      .covid .covid-content h1 {
+        color:#fff;
+        text-align: center ;
+        padding-inline-start: 0.25em;
+        padding-inline-end: 0.75em;
+      }
+    
+      html[dir="rtl"] .covid .covid-content h1 {
+        color:#fff;
+        right:initial;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+      }
+    
+      html[dir="rtl"] .covid .covid-content .covid-container p {
+        color:#fff;
+        text-align: start;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+      }
+    
+      .covid .imageCovid {
+        width: 5em;
+        height: 5em;
+        position: absolute;
+        right: 0;
+        align-items:flex-end;
+      }
+    
+      html[dir='rtl'] .covid .imageCovid {
+        width: 5em;
+        height: 5em;
+        right:initial;
+        left: 0;
+      }
     
     /* Advantages */
 
