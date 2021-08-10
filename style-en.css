@@ -20,3 +20,10 @@
     left: 0;
   }
 }
+
+.footer navbar {
+  margin-left: auto;
+}
+.footerLogo {
+  margin-right: auto;
+}

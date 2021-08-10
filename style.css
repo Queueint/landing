@@ -1,30 +1,36 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 24px;
-  background-color: #DEF4FF;
+  background-color: #def4ff;
   width: 100vw;
   overflow-x: hidden;
   color: #424242;
 }
 
 @media screen and (max-width: 1380px) {
-  html, body {
+  html,
+  body {
     font-size: 20px;
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
-  color: #6CB310;
+  color: #6cb310;
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 0.25em;
 }
 
 a {
-  color: #1F81CC;
+  color: #1f81cc;
   font-size: 1em;
 }
 
@@ -45,10 +51,10 @@ hr {
   z-index: 2;
   width: 100%;
   height: 3.5rem;
-  background-color: #FFF;
-  background-image: linear-gradient(#FFF, #DEF4FF);
+  background-color: #fff;
+  background-image: linear-gradient(#fff, #def4ff);
   text-align: left;
-  box-shadow: 0px 0px 8px #DEF4FF;
+  box-shadow: 0px 0px 8px #def4ff;
 }
 
 .header .btn {
@@ -92,7 +98,7 @@ hr {
 
 .header .nav a {
   display: inline-block;
-  color: #1F81CC;
+  color: #1f81cc;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
@@ -125,7 +131,7 @@ hr {
   .header .nav {
     font-size: 1rem;
   }
-  
+
   .header .nav .loginLink .btn {
     font-size: 1em;
   }
@@ -134,15 +140,15 @@ hr {
     display: block;
     margin: 0;
   }
-  
+
   .header .nav .navContent {
     display: none;
     flex-direction: column;
-    background-color: #EEE;
+    background-color: #eee;
     padding: 0.5em 1em;
     box-shadow: 3px 3px 8px #ccc;
   }
-  
+
   .header .nav.active .navContent {
     display: flex;
     position: absolute;
@@ -150,7 +156,7 @@ hr {
     right: 0;
     border-radius: 1em;
   }
-  
+
   .header .nav .navContent a {
     color: #666;
     text-align: right;
@@ -160,7 +166,8 @@ hr {
 }
 
 @media screen and (max-width: 450px) {
-  .header .btn, .loginLink {
+  .header .btn,
+  .loginLink {
     font-size: 0.75em;
   }
 }
@@ -278,23 +285,24 @@ hr {
   box-sizing: border-box;
 }
 
-.columns p, .columns ul {
+.columns p,
+.columns ul {
   font-size: 1em;
 }
 
 @keyframes ambientMovement {
   0% {
-    transform: scale(1.0) rotateZ(0deg);
+    transform: scale(1) rotateZ(0deg);
     opacity: 1;
   }
   33% {
-    transform: scale(1.0) rotateZ(1.5deg);
+    transform: scale(1) rotateZ(1.5deg);
   }
   50% {
     opacity: 0.75;
   }
   66% {
-    transform: scale(1.0) rotateZ(0deg);
+    transform: scale(1) rotateZ(0deg);
   }
   100% {
     transform: scale(1.01) rotateZ(-1.5deg);
@@ -449,13 +457,13 @@ hr {
   margin: 0.5em;
   margin-top: 1em;
   background-color: #fff;
-  transform: scale(1.0);
+  transform: scale(1);
   transition: background-color 0.1s linear, transform 0.3s;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   transform: scale(1.05);
 }
 
@@ -464,13 +472,13 @@ hr {
 }
 
 .btn.callToAction {
-  background-color: #144B76;
-  color: #E0F3FF;
+  background-color: #144b76;
+  color: #e0f3ff;
   font-weight: bold;
 }
 
 .btn.callToAction:hover {
-  background-color: #1167A8;
+  background-color: #1167a8;
 }
 
 .buttonsContainer {
@@ -505,6 +513,60 @@ hr {
   flex-wrap: wrap;
 }
 
-.footer p {
+.footer {
+  background-color: #464646;
+}
+
+.footer p,
+a {
   margin: 0 0.25em;
+  color: #ffffff;
+  font-family: Al Nile;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+.footer .credits {
+  margin: auto;
+  order: 2;
+}
+.footer navbar {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: row;
+  order: 3;
+}
+.footerLogo {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  order: 1;
+}
+
+.footer navbar span {
+  display: none;
+  color: #ffff;
+}
+
+@media screen and (max-width: 490px) {
+  .footer navbar span {
+    display: inline;
+  }
+
+  .footer .content navbar {
+    flex-basis: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .footerLogo {
+    order: 2;
+  }
+  .footer .credits {
+    text-align: end;
+    flex: max-content;
+    order: 3;
+  }
 }
