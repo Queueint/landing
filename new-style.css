@@ -620,6 +620,7 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 }
 
 .contact-screen h2 {
+    font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     color: #fff;
     font-size: 5.75em;
@@ -628,6 +629,8 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
     line-height: 1em;
     text-align: start;
     z-index: 1; /* So that it's above the form::before blur */
+    transform: scaleY(1.25);
+    font-weight: normal;
 }
 
 .contact-screen .flex-row {
