@@ -1,15 +1,3 @@
-const isRtl = document.dir === 'rtl';
-
-ScrollReveal().reveal('.revealBottom', { delay: '100', distance: '100%', opacity: 0, origin: 'bottom' });
-ScrollReveal().reveal('.revealStart', {  delay: '100', distance: '100%', opacity: 0, origin: isRtl ? 'right' : 'left' });
-ScrollReveal().reveal('.revealEnd', {  delay: '100', distance: '100%', opacity: 0, origin: isRtl ? 'left' : 'right' });
-ScrollReveal().reveal('.revealRotate', {
-  delay: '0',
-  duration: '1000',
-  rotate: {z: isRtl ? -180 : 180},
-  scale: 0,
-});
-
 window.addEventListener('load', () => {
   const nav = document.getElementsByClassName('nav')[0];
   const navBurgerButton = document.querySelector('.nav .burger');
@@ -87,6 +75,7 @@ window.addEventListener('load', () => {
     };
 
     const handleCarousel = () => {
+      const isRtl = document.dir === 'rtl';
       const chevronNext = isRtl ? '<i class="fas fa-chevron-left"></i>' : '<i class="fas fa-chevron-right"></i>';
       const chevronPrev = isRtl ? '<i class="fas fa-chevron-right"></i>' : '<i class="fas fa-chevron-left"></i>';
       const makeButton = (icon, direction) => `<button type="button" class="slick-${direction}">${icon}</button>`;
