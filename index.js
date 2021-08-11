@@ -3,12 +3,11 @@ const isRtl = document.dir === 'rtl';
 ScrollReveal().reveal('.revealBottom', { delay: '100', distance: '100%', opacity: 0, origin: 'bottom' });
 ScrollReveal().reveal('.revealStart', {  delay: '100', distance: '100%', opacity: 0, origin: isRtl ? 'right' : 'left' });
 ScrollReveal().reveal('.revealEnd', {  delay: '100', distance: '100%', opacity: 0, origin: isRtl ? 'left' : 'right' });
-ScrollReveal().reveal('.iconContainer', {
+ScrollReveal().reveal('.revealRotate', {
   delay: '0',
-  duration: '2000',
-  rotate: {z: 180},
+  duration: '1000',
+  rotate: {z: isRtl ? -180 : 180},
   scale: 0,
-  reset: true,
 });
 
 window.addEventListener('load', () => {
