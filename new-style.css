@@ -653,7 +653,6 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
     background-color: #53b9ff;
     border-radius: 50%;
     filter: blur(64px);
-    color-interpolation-filters: sRGB; /* Fix wrong color on iPhone */
 }
 
 .contact-screen p {
