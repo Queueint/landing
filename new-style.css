@@ -1080,3 +1080,9 @@ html[dir='rtl'] .covid .imageCovid {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 340px) {
+    .advantages-screen .snake img {
+        height: 25vw;
+    }
+}
