@@ -993,6 +993,10 @@ html[dir='rtl'] .covid .imageCovid {
         font-size: 2em;
     }
 
+    .advantages-screen .snake img {
+        height: 8.5em;
+    }
+
     /* Scrolled mobile style */
 
     .header.scrolled {
