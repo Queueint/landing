@@ -671,6 +671,11 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
     padding: 0.25em 3em;
     cursor: pointer;
     margin-top: 1em;
+    transition: background-color 0.3s;
+}
+
+.contact-screen .new-btn:hover {
+    background-color: #ff6427;
 }
 
 /* Footer */
