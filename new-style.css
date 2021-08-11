@@ -1071,7 +1071,7 @@ html[dir='rtl'] .covid .imageCovid {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .new-steps .step, .new-steps .step:nth-child(2n+1) {
         flex-direction: column;
     }
