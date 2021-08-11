@@ -316,6 +316,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 
 .above-the-fold .graphic img {
     width: 100%;
+    filter: drop-shadow(3px 0 8px rgba(0, 0, 0, 0.33));
 }
 
 /* Scrolled default style */
@@ -739,6 +740,7 @@ html[dir="rtl"] .footer .navs {
 .covid {
     background-color:#5BC6F9;
     position: relative;
+    z-index: 1; /* So that it's above the atf graphic shadow */
   }
   
 .covid h1 {
