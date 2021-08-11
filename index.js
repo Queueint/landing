@@ -1,7 +1,5 @@
 const isRtl = document.dir === 'rtl';
 
-ScrollReveal().reveal('.revealRight',  { delay: '100', distance: '100%', opacity: 0, origin: 'right' });
-ScrollReveal().reveal('.revealLeft',   { delay: '100', distance: '100%', opacity: 0, origin: 'left' });
 ScrollReveal().reveal('.revealBottom', { delay: '100', distance: '100%', opacity: 0, origin: 'bottom' });
 ScrollReveal().reveal('.revealStart', {  delay: '100', distance: '100%', opacity: 0, origin: isRtl ? 'right' : 'left' });
 ScrollReveal().reveal('.revealEnd', {  delay: '100', distance: '100%', opacity: 0, origin: isRtl ? 'left' : 'right' });
