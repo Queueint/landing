@@ -891,13 +891,11 @@ html[dir='rtl'] .covid .imageCovid {
 
     .above-the-fold .graphic {
         justify-content: center;
-        max-height: 24em;
         z-index: 0;
     }
 
     .above-the-fold .graphic img {
-        width: initial;
-        height: 100%;
+        width: 75vw;
     }
 
     /* How it works */
