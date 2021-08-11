@@ -706,6 +706,7 @@ html[dir="rtl"] .footer img {
 }
 
 .footer .navs {
+    font-family: 'Roboto', sans-serif;
     width: auto;
     position: absolute;
     right: 2.5em;
