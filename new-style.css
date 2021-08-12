@@ -741,8 +741,8 @@ html[dir="rtl"] .footer .navs {
     background-color:#5BC6F9;
     position: relative;
     z-index: 1; /* So that it's above the atf graphic shadow */
-  }
-  
+}
+
 .covid h1 {
     color:#fff;
     text-align: start;
@@ -754,15 +754,15 @@ html[dir="rtl"] .footer .navs {
 .covid .covid-content .covid-container {
     display: flex;
     height: 9.5em;
-  }
-   
+}
+
 .covid .covid-content .covid-container p {
     color:#fff;
     padding-inline-start: 12.5em;
     padding-inline-end: 14.5em;
     padding-top: 1em;
-  }
-  
+}
+
 .covid .imageCovid {
     width: 9.25em;
     height: 9.25em;
@@ -770,8 +770,8 @@ html[dir="rtl"] .footer .navs {
     right: 0;
     bottom: 0;
     align-items: flex-end;
-  }
-  
+}
+
 html[dir='rtl'] .covid .imageCovid {
     right:initial;
     left: 0;
