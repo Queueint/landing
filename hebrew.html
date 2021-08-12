@@ -263,14 +263,24 @@
             <p class="mobile-centered">נשמח לספק לך את השירות הטוב ביותר ולקחת חלק בחדשנות הארגון שלך</p>
             <form id="contact-form">
               <div class="row">
-                <input id="contact-form-first-name" type="text" placeholder="שם פרטי" style="margin-left: 0.625em" />
-                <input id="contact-form-last-name" type="text" placeholder="שם משפחה" style="margin-right: 0.625em" />
+                <div class="input-container" style="margin-left: 0.625em"><input id="contact-form-first-name"
+                    type="text" placeholder="שם פרטי" /></div>
+                <div class="input-container" style="margin-right: 0.625em"><input id="contact-form-last-name"
+                    type="text" placeholder="שם משפחה" /></div>
               </div>
-              <input id="contact-form-email" type="email" placeholder="כתובת דואר אלקטרוני" />
-              <textarea id="contact-form-message" rows="6" placeholder="הודעה (לא חובה)"></textarea>
+              <div class="input-container"><input id="contact-form-email" type="email"
+                  placeholder="כתובת דואר אלקטרוני" /></div>
+              <div class="input-container"><textarea id="contact-form-message" rows="6"
+                  placeholder="הודעה (לא חובה)"></textarea></div>
               <div class="mobile-centered">
-                <button type="submit" class="new-btn">שלח</button>
+                <button id="contact-form-submit" type="submit" class="new-btn"
+                  data-success-text="פנייתך התקבלה">שלח</button>
               </div>
+              <p id="contact-form-status-message" class="message"
+                data-generic-error-text="אירעה שגיאה. נסה שוב מאוחר יותר."
+                data-name-validation-text="נא להזין שם בעברית/אנגלית."
+                data-email-validation-text="נא להזין כתובת מייל תקינה."
+                data-message-validation-text="ההודעה איננה תקינה"></p>
             </form>
           </div>
         </div>

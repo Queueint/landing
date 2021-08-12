@@ -10,6 +10,12 @@
     flex-grow: 1;
 }
 
+.input-container {
+    margin-top: 1em;
+    position: relative;
+    box-sizing: border-box;
+}
+
 input, textarea {
     width: 100%;
     font-size: 1em;
@@ -20,8 +26,31 @@ input, textarea {
     font-family: 'Roboto', sans-serif;
     padding: 0.625em;
     box-sizing: border-box;
-    margin-top: 1em;
     min-width: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.input-container.errored input,
+.input-container.errored textarea {
+    color: #fc0e0e;
+    border: 1px solid #fc0e0e;
+    background-color: #ffeded;
+}
+
+.input-container.errored::after {
+    content: "X";
+    color: #fc0e0e;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(-50%, 33%);
+    margin-inline-end: 0.5em;
+}
+
+html[dir="rtl"] .input-container.errored::after {
+    right: initial;
+    left: 0%;
+    transform: translate(25%, 66%);
 }
 
 .snake {
@@ -615,6 +644,7 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 
 .contact-content {
     padding: 2.5em 0.75em;
+    padding-bottom: 1.5em;
     max-width: 70em;
     margin: auto;
     box-sizing: border-box;
@@ -687,6 +717,21 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
     box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
     color: #54baff;
     cursor: default;
+}
+
+.contact-screen .new-btn:disabled.success {
+    color: #2d2;
+}
+
+.contact-screen .message {
+    font-size: 0.875em;
+    font-family: 'Roboto', sans-serif;
+    min-height: 1.5em;
+    margin-top: 1.5em;
+}
+
+.contact-screen .message.error {
+    color: #e45959;
 }
 
 /* Footer */
