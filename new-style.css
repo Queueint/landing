@@ -739,6 +739,7 @@ html[dir="rtl"] .footer .navs {
 /*Covid*/
 .covid {
     background-color:#5BC6F9;
+    color:#fff;
     position: relative;
     z-index: 1; /* So that it's above the atf graphic shadow */
     padding-top: 4.875em;
@@ -748,20 +749,14 @@ html[dir="rtl"] .footer .navs {
 }
 
 .covid h1 {
-    color:#fff;
     text-align: start;
 }
 
-.covid .covid-content .covid-container {
-    display: flex;
-}
-
-.covid .covid-content .covid-container p {
-    color:#fff;
+.covid p {
     padding-top: 1em;
 }
 
-.covid .imageCovid {
+.covid img {
     height: 15.5em;
     position: absolute;
     right: 0;
@@ -769,7 +764,7 @@ html[dir="rtl"] .footer .navs {
     align-items: flex-end;
 }
 
-html[dir='rtl'] .covid .imageCovid {
+html[dir='rtl'] .covid img {
     right:initial;
     left: 0;
     transform: scaleX(-1);
@@ -965,15 +960,15 @@ html[dir='rtl'] .covid .imageCovid {
         padding-inline-end: 8.5em;
     }
 
-    .covid .covid-content h1 {
+    .covid h1 {
         text-align: center ;
     }
     
-    .covid .imageCovid {
+    .covid img {
         height: 11em;
     }
     
-    html[dir='rtl'] .covid .imageCovid {
+    html[dir='rtl'] img {
         right:initial;
         left: 0;
     }
