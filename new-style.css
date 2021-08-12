@@ -756,6 +756,7 @@ html[dir="rtl"] .footer .navs {
 .covid p {
     margin-top: 1em;
     font-size: 1.375em;
+    max-width: 50vw;
 }
 
 .covid img {
@@ -969,6 +970,7 @@ html[dir='rtl'] .covid img {
 
     .covid p {
         font-size: 1.25em;
+        max-width: 100%;
     }
     
     .covid img {
