@@ -741,19 +741,19 @@ html[dir="rtl"] .footer .navs {
     background-color:#5BC6F9;
     position: relative;
     z-index: 1; /* So that it's above the atf graphic shadow */
+    padding-top: 4.875em;
+    padding-bottom: 4.875em;
 }
 
 .covid h1 {
     color:#fff;
     text-align: start;
-    padding-top: 2em;
     padding-inline-start: 6.25em;
     padding-inline-end: 14.5em;
 }
 
 .covid .covid-content .covid-container {
     display: flex;
-    height: 9.5em;
 }
 
 .covid .covid-content .covid-container p {
@@ -960,6 +960,11 @@ html[dir='rtl'] .covid .imageCovid {
 
     /*Covid*/
     
+    .covid {
+        padding-top: 2.25em;
+        padding-bottom: 2.25em;
+    }
+
     .covid .covid-content .covid-container p {
         padding-left: 0.75em;
         padding-right: 0.75em;
