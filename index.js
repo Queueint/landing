@@ -110,17 +110,17 @@ window.addEventListener('load', () => {
   window.addEventListener('resize', handleViewportChange);
   handleViewportChange();
 
-  const firstNameElement = document.getElementById('contact-form-first-name');
-  const lastNameElement = document.getElementById('contact-form-last-name');
+  const nameElement = document.getElementById('contact-form-name');
+  const phoneElement = document.getElementById('contact-form-phone');
   const emailElement = document.getElementById('contact-form-email');
   const messageElement = document.getElementById('contact-form-message');
-  const formFields = [firstNameElement, lastNameElement, emailElement, messageElement];
+  const formFields = [nameElement, phoneElement, emailElement, messageElement];
   const statusMessageElement = document.getElementById('contact-form-status-message');
   const submitButton = document.getElementById('contact-form-submit');
   
   const validationErrors = {
-    firstName: false,
-    lastName: false,
+    name: false,
+    phone: false,
     email: false,
     message: false,
   };
@@ -144,6 +144,7 @@ window.addEventListener('load', () => {
 
   const handleValidation = () => {
     const isString = (s) => typeof s === 'string' || s instanceof String;
+    const isPhone = (s) => isString(s) && /^((\+?\d\d?\d?)|0)((\d\d-\d{3}-\d{4})|(\d\d-\d{4}-\d{3})|(\d\d?-?\d{7})|(\d-\d{4}-\d{4}))$/u.test(s);
     const isEmail = (s) => isString(s) && /^.+@.+\..+$/u.test(s);
     const makeInputNotErrored = element => element.closest('.input-container').classList.remove('errored');
   
@@ -152,8 +153,12 @@ window.addEventListener('load', () => {
       const setErrorMessage = (errorKey) => setMessage(statusMessageElement.getAttribute(errorKey));
   
       let errored = false;
-      if (validationErrors.firstName || validationErrors.lastName) {
+      if (validationErrors.name) {
         setErrorMessage('data-name-validation-text');
+        errored = true;
+      }
+      if (validationErrors.phone) {
+        setErrorMessage('data-phone-validation-text');
         errored = true;
       }
       if (validationErrors.email) {
@@ -173,28 +178,28 @@ window.addEventListener('load', () => {
       handleSubmitButton();
     };
   
-    firstNameElement.addEventListener('input', () => {
-      const value = firstNameElement.value.trim();
+    nameElement.addEventListener('input', () => {
+      const value = nameElement.value.trim();
       const isInvalid = !value || !isString(value) || !/^[a-zA-Zא-ת ]+$/u.test(value);
       if (isInvalid) {
-        makeInputErrored(firstNameElement)
-        validationErrors.firstName = true;
+        makeInputErrored(nameElement)
+        validationErrors.name = true;
       } else {
-        makeInputNotErrored(firstNameElement)
-        validationErrors.firstName = false;
+        makeInputNotErrored(nameElement)
+        validationErrors.name = false;
       }
       updateErrorMessage();
     });
   
-    lastNameElement.addEventListener('input', () => {
-      const value = lastNameElement.value.trim();
-      const isInvalid = !value || !isString(value) || !/^[א-תa-zA-Z ]+$/u.test(value);
+    phoneElement.addEventListener('input', () => {
+      const value = phoneElement.value.trim();
+      const isInvalid = !value || !isPhone(value);
       if (isInvalid) {
-        makeInputErrored(lastNameElement)
-        validationErrors.lastName = true;
+        makeInputErrored(phoneElement)
+        validationErrors.phone = true;
       } else {
-        makeInputNotErrored(lastNameElement)
-        validationErrors.lastName = false;
+        makeInputNotErrored(phoneElement)
+        validationErrors.phone = false;
       }
       updateErrorMessage();
     });
@@ -238,18 +243,18 @@ window.addEventListener('load', () => {
     }
 
     const getValues = () => {
-      const [firstName, lastName, email, message] = formFields;
+      const [name, phone, email, message] = formFields;
       return {
-        firstName: firstName.value.trim(),
-        lastName: lastName.value.trim(),
+        name: name.value.trim(),
+        phone: phone.value.trim(),
         emailAddress: email.value.trim(),
         message: message.value.trim(),
       };
     };
-    const { firstName, lastName, emailAddress, message } = getValues();
+    const { name, phone, emailAddress, message } = getValues();
     const request = new Request(formTargetUrl, {
       method: 'POST',
-      body: JSON.stringify({ firstName, lastName, emailAddress, message }),
+      body: JSON.stringify({ name, phone, emailAddress, message }),
       headers: { 'Content-Type': 'application/json' },
     });
 
@@ -282,11 +287,15 @@ window.addEventListener('load', () => {
                 if (parts.length === 2 && parts[0] === 'validation') {
                   const erroredField = parts[1];
                   switch (erroredField) {
-                    case 'firstName':
-                    case 'lastName': {
+                    case 'name': {
                       statusMessageElement.innerText = statusMessageElement.getAttribute('data-name-validation-text');
-                      makeInputErrored(firstNameElement);
-                      makeInputErrored(lastNameElement);
+                      makeInputErrored(nameElement);
+                      figuredOutError = true;
+                      break;
+                    }
+                    case 'phone': {
+                      statusMessageElement.innerText = statusMessageElement.getAttribute('data-phone-validation-text');
+                      makeInputErrored(phoneElement);
                       figuredOutError = true;
                       break;
                     }
