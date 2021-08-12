@@ -764,8 +764,7 @@ html[dir="rtl"] .footer .navs {
 }
 
 .covid .imageCovid {
-    width: 9.25em;
-    height: 9.25em;
+    height: 15.5em;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -973,8 +972,7 @@ html[dir='rtl'] .covid .imageCovid {
     }
     
     .covid .imageCovid {
-        width: 5em;
-        height: 5em;
+        height: 11em;
     }
     
     html[dir='rtl'] .covid .imageCovid {
