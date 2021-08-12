@@ -750,10 +750,12 @@ html[dir="rtl"] .footer .navs {
 
 .covid h1 {
     text-align: start;
+    font-size: 1.75em;
 }
 
 .covid p {
     margin-top: 1em;
+    font-size: 1.375em;
 }
 
 .covid img {
@@ -962,6 +964,11 @@ html[dir='rtl'] .covid img {
 
     .covid h1 {
         text-align: center ;
+        font-size: 1.5em;
+    }
+
+    .covid p {
+        font-size: 1.25em;
     }
     
     .covid img {
