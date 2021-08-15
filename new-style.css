@@ -397,12 +397,11 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 }
 
 .method-screen h1 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 3.75em;
   line-height: 1.4166em;
   margin-bottom: 1em;
   text-align: center;
-  font-weight: 400;
 }
 
 .method-screen h1 b {
