@@ -136,7 +136,7 @@ html[dir="rtl"] .header .nav .nav-content .new-btn.close {
 .header .nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 1.75em;
+  margin: 0 1.25em;
   height: auto;
   transition: color 0.3s;
 }
@@ -261,7 +261,7 @@ html[dir="rtl"] .header .burger {
 
 .decorative-circle::before {
   content: "";
-  width: 115vw;
+  width: 80vw;
   height: 75vw;
   position: absolute;
   top: 15%;
