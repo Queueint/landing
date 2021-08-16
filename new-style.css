@@ -1214,11 +1214,11 @@ html[dir="rtl"] .covid img {
 
 @media screen and (max-width: 480px) {
   .covid {
-    height: 26em;
+    height: 28em;
   }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 340px) {
   .covid {
     height: auto;
   }
