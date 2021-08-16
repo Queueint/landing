@@ -646,7 +646,7 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
   color: #fff;
   background-image: url("assets/wthm-repeatable.png");
   background-repeat: repeat;
-  background-position: -10% 20%;
+  background-position: -2rem 60%;
   overflow: hidden;
 }
 
@@ -671,6 +671,13 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
   transform: scaleY(1.25);
   font-weight: normal;
   min-width: 3em;
+}
+
+.contact-screen h2 span {
+  background-color: rgba(83, 185, 255, 0.66);
+  display: inline-block;
+  height: 0.75em;
+  padding: 0.125em;
 }
 
 .contact-screen .flex-row {
