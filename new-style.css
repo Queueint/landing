@@ -693,6 +693,12 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
   min-width: 3em;
 }
 
+html[dir="rtl"] .contact-screen h2 {
+  font-family: sans-serif;
+  transform: translateY(-0.2em) scaleY(1.25);
+  font-size: 8.5em;
+}
+
 .contact-screen .flex-row {
   align-items: center;
 }
@@ -1182,6 +1188,11 @@ html[dir="rtl"] .covid img {
     min-width: 0;
     margin: auto;
     margin-bottom: 0.8em;
+  }
+
+  html[dir="rtl"] .contact-screen h2 {
+    font-size: 3.75rem;
+    transform: scaleY(1.25);
   }
 
   .contact-screen p {
