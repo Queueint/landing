@@ -293,16 +293,16 @@ html[dir="rtl"] .decorative-circle::before {
   backdrop-filter: blur(4px);
   border-start-end-radius: 33px;
   z-index: 1;
-  max-width: 66%;
+  max-width: 57%;
   min-height: 75vh;
   box-sizing: border-box;
   padding: 4em 0;
   padding-left: 14.5em;
-  padding-right: 6.25em;
+  padding-right: 5em;
 }
 
 html[dir="rtl"] .above-the-fold .above-the-fold-content {
-  padding-left: 6.25em;
+  padding-left: 5em;
   padding-right: 14.5em;
 }
 
@@ -311,7 +311,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
   color: #5bc6f9;
   font-weight: 200;
   text-align: start;
-  line-height: 1em;
+  line-height: 1.25em;
   margin-bottom: 0.75em;
 }
 
