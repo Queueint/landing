@@ -505,6 +505,14 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
   margin: 2em 0 2em 9em;
 }
 
+html[dir="rtl"] .advantages-screen .snake-item img {
+  margin: 2em 0 2em 9em;
+}
+
+html[dir="rtl"] .advantages-screen .snake .snake-item:nth-child(odd) img {
+  margin: 2em 9em 2em 0;
+}
+
 .advantages-screen .title {
   font-weight: 600;
   margin-bottom: 0.5em;
