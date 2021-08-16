@@ -463,6 +463,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 
 .advantages-screen {
   background-color: #f3f3f3;
+  padding-top: 1em;
   padding-bottom: 9.125em;
 }
 
@@ -477,7 +478,7 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 }
 
 .advantages-screen .new-content {
-  max-width: 70em;
+  max-width: 64em;
   width: 100%;
   margin: auto;
   padding: 1em;
@@ -485,7 +486,11 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 
 .advantages-screen .snake-item img {
   height: 17.5em;
-  margin: 2em;
+  margin: 2em 9em 2em 0;
+}
+
+.advantages-screen .snake .snake-item:nth-child(odd) img {
+  margin: 2em 0 2em 9em;
 }
 
 .advantages-screen .title {
@@ -525,7 +530,6 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 }
 
 .advantages-screen .snake img {
-  margin: 2em;
   box-sizing: border-box;
 }
 
@@ -1069,8 +1073,17 @@ html[dir="rtl"] .covid img {
     font-size: 2em;
   }
 
-  .advantages-screen .snake img {
+  .advantages-screen .snake-item img {
+    margin: 2em;
     height: 8.5em;
+  }
+
+  .advantages-screen .snake .snake-item:nth-child(2n+1) img {
+    margin: 2em;
+  }
+
+  .advantages-screen .snake .snake-item > div {
+    max-width: 30em;
   }
 
   /* Scrolled mobile style */
