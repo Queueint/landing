@@ -1157,6 +1157,11 @@ html[dir="rtl"] .covid img {
 
   /* Contact form */
 
+  .contact-screen {
+    background-position: center 1.25rem;
+    background-size: auto 12.25em;
+  }
+
   .contact-screen h2 {
     font-size: 3.75rem;
     padding: 0;
