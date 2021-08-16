@@ -822,7 +822,7 @@ html[dir="rtl"] .footer .navs {
 }
 
 .covid img {
-  height: 23.5em;
+  height: 15em;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1039,10 +1039,24 @@ html[dir="rtl"] .covid img {
   /*Covid*/
 
   .covid {
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    resize: horizontal;
+    position: relative;
+    height: 15em;
+  }
+
+  .covid .covid-content {
     padding-top: 2.25em;
     padding-bottom: 3em;
+    padding-inline-end: 0;
     padding-inline-start: 3.125em;
-    padding-inline-end: 2.5em;
+  }
+
+  .covid h1,
+  .covid p {
+    margin-inline-end: 2.5rem;
   }
 
   .covid h1 {
@@ -1053,16 +1067,30 @@ html[dir="rtl"] .covid img {
   .covid p {
     font-size: 1.1875em;
     max-width: 100%;
+    line-height: 2rem;
+  }
+
+  .covid .image-container {
+    height: calc(100% + 3em);
+    display: flex;
+    align-items: flex-end;
+    shape-outside: circle(7.5em at calc(100% - 3.5em) calc(100% - 7em));
+    float: right;
+  }
+
+  html[dir="rtl"] .covid .image-container {
+    float: left;
+    shape-outside: circle(7.5em at 3.5em calc(100% - 7em));
   }
 
   .covid img {
+    position: static;
     height: 14em;
-    right: -2.5em;
+    transform: translate(3em, -2.25em);
   }
 
-  html[dir="rtl"] img {
-    right: initial;
-    left: 0;
+  html[dir="rtl"] .covid img {
+    transform: translate(-3em, -1.75em) scaleX(-1);
   }
 
   /* Advantages */
@@ -1169,6 +1197,30 @@ html[dir="rtl"] .covid img {
 
   .footer a:not(:last-child) {
     border-inline-end: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .covid {
+    height: 17em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .covid {
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .covid {
+    height: 26em;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .covid {
+    height: auto;
   }
 }
 
