@@ -693,13 +693,6 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
   min-width: 3em;
 }
 
-.contact-screen h2 span {
-  background-color: rgba(83, 185, 255, 0.66);
-  display: inline-block;
-  height: 0.75em;
-  padding: 0.125em;
-}
-
 .contact-screen .flex-row {
   align-items: center;
 }
