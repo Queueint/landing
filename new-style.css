@@ -327,6 +327,10 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
   margin-bottom: 0.75em;
 }
 
+.above-the-fold h1 b {
+  font-weight: 400;
+}
+
 .above-the-fold .new-btn {
   font-size: 1em;
   margin-top: 2em;
