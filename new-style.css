@@ -753,9 +753,9 @@ html[dir="rtl"] .contact-screen h2 {
 }
 
 .contact-screen .new-btn:disabled {
-  background-color: #fff;
-  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
-  color: #54baff;
+  background-color: #a1cbe9;
+  box-shadow: 0 4px 4px rgba(164, 164, 164, 0.25);
+  color: #fff;
   cursor: default;
 }
 
