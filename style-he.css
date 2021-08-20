@@ -1,0 +1,20 @@
+html, body {
+    font-family: "Heebo", sans-serif;
+}
+
+input,
+textarea {
+    font-family: "Heebo", sans-serif;
+}
+
+.contact-screen h2 {
+    font-family: "Heebo", sans-serif;
+}
+
+.contact-screen .message {
+    font-family: "Heebo", sans-serif;
+}
+
+.footer .navs {
+    font-family: "Heebo", sans-serif;
+}
