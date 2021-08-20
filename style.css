@@ -104,6 +104,13 @@ html[dir="rtl"] .input-container.errored::after {
   transform: translate(25%, 66%);
 }
 
+.new-btn {
+  font-size: 1em;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
 .snake {
   display: flex;
   flex-direction: column;
@@ -200,15 +207,11 @@ html[dir="rtl"] .header .nav .nav-content .new-btn.close {
 }
 
 .header .new-btn {
-  font-size: 1em;
   font-weight: 500;
   background-color: transparent;
-  color: #fff;
   border: 1px solid #fff;
-  transition: background-color 0.3s, color 0.3s;
   border-radius: 0.3125em;
   padding: 0.25em 2.125em;
-  cursor: pointer;
 }
 
 .header .new-btn:hover {
@@ -381,16 +384,12 @@ html[dir="rtl"] .above-the-fold .above-the-fold-content {
 }
 
 .above-the-fold .new-btn {
-  font-size: 1em;
   margin-top: 2em;
   background-color: #5fcf90;
-  transition: background-color 0.3s;
   box-shadow: 0 4px 7px rgba(95, 207, 144, 0.61);
   border-radius: 10px;
   border: 0;
-  color: #fff;
   padding: 0.625em 2.375em;
-  cursor: pointer;
   font-weight: 500;
 }
 
@@ -696,14 +695,10 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 }
 
 .bottom-cta .new-btn {
-  font-size: 1em;
   background-color: #5fcf90;
-  transition: background-color 0.3s;
   box-shadow: 0 4px 7px rgba(95, 207, 144, 0.61);
   border-radius: 10px;
   border: 0;
-  color: #fff;
-  cursor: pointer;
   padding: 0.5em 3.75em;
   margin-top: 2em;
 }
@@ -785,16 +780,12 @@ html[dir="rtl"] .contact-screen h2 {
 }
 
 .contact-screen .new-btn {
-  font-size: 1em;
   background-color: #ff8657;
   box-shadow: 0 4px 4px rgba(255, 134, 87, 0.25);
-  color: #fff;
   border: 0;
   border-radius: 0.3125em;
   padding: 0.25em 3em;
-  cursor: pointer;
   margin-top: 1em;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .contact-screen .new-btn:hover {
