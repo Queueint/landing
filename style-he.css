@@ -11,6 +11,10 @@ textarea {
     font-size: 17.5px;
 }
 
+.above-the-fold h1 b {
+    font-weight: 500;
+}
+
 .contact-screen h2 {
     font-family: "Heebo", sans-serif;
     font-size: 7.5em;
