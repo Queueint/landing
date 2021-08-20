@@ -743,7 +743,6 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 
 html[dir="rtl"] .contact-screen h2 {
   transform: translateY(-0.2em) scaleY(1.25);
-  font-size: 8.5em;
 }
 
 .contact-screen .flex-row {

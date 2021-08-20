@@ -7,8 +7,13 @@ textarea {
     font-family: "Heebo", sans-serif;
 }
 
+.above-the-fold p {
+    font-size: 17.5px;
+}
+
 .contact-screen h2 {
     font-family: "Heebo", sans-serif;
+    font-size: 7.5em;
 }
 
 .contact-screen .message {
