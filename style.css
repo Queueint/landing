@@ -1234,9 +1234,8 @@ html[dir="rtl"] .covid img {
     margin-bottom: 0.8em;
   }
 
-  html[dir="rtl"] .contact-screen h2 {
-    font-size: 3.75rem;
-    transform: scaleY(1.25);
+  .contact-screen h2 div {
+    display: inline-block;
   }
 
   .contact-screen p {
@@ -1298,6 +1297,12 @@ html[dir="rtl"] .covid img {
   }
 }
 
+@media screen and (max-width: 422px) {
+  .contact-screen h2 {
+      font-size: 14vw;
+  }
+}
+
 @media screen and (max-width: 340px) {
   .covid {
     height: auto;
@@ -1324,5 +1329,11 @@ html[dir="rtl"] .covid img {
 
   .advantages-screen .snake img {
     height: 25vw;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .contact-screen h2 {
+    font-size: 13vw;
   }
 }

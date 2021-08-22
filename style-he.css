@@ -31,3 +31,15 @@ textarea {
 .footer .navs {
     font-family: "Heebo", sans-serif;
 }
+
+@media screen and (max-width: 1117px) {
+    .contact-screen h2 {
+        font-size: 3.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-screen h2 {
+        font-size: 12vw;
+    }
+}
