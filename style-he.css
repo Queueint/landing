@@ -15,6 +15,10 @@ textarea {
     font-weight: 500;
 }
 
+.steps .step .description {
+    font-size: 1.12em;
+}
+
 .contact-screen h2 {
     font-family: "Heebo", sans-serif;
     font-size: 7.5em;
