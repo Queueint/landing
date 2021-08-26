@@ -399,7 +399,7 @@ html[dir="rtl"] .advantages-screen .snake .slick-prev {
 .contact-screen {
   background-color: #53b9ff;
   color: #fff;
-  background-image: url("assets/wthm-repeatable.png");
+  background-image: url("assets/wthm-repeatable.webp");
   background-repeat: repeat;
   background-position: -2rem 60%;
   overflow: hidden;
