@@ -50,16 +50,14 @@ window.addEventListener('load', () => {
     };
 
     const handleLinks = () => {
-      const links = document.querySelectorAll('.nav a');
+      const links = document.querySelectorAll('a.nav-item[href^="#"]');
       let foundCurrent = false;
       links.forEach((link, i) => {
         const href = link.getAttribute('href');
-        if (!href.startsWith('#')) {
-          return;
-        }
         const target = document.querySelector(href);
-        const targetY = target.offsetTop - 1;
-        if (window.scrollY > targetY) {
+        const targetY = target.offsetTop - 2;
+        const isBottomOfPage = (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 2;
+        if ((window.scrollY > targetY) || (i==links.length-1 && isBottomOfPage)) {
           link.classList.add('current');
           foundCurrent = true;
           if (i > 0) {
