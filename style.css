@@ -692,6 +692,7 @@ html[dir="rtl"] .covid img {
   }
 
   .covid .covid-content {
+    width: 100%;
     padding-top: 2.25em;
     padding-bottom: 3em;
     padding-inline-end: 0;
